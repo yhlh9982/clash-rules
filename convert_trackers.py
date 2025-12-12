@@ -4,7 +4,7 @@ from urllib.parse import urlparse
 import ipaddress
 
 # 源地址
-URL = "https://down.adysec.com/trackers_all.txt"
+URL = "https://raw.githubusercontent.com/adysec/tracker/main/trackers_all.txt"
 
 # 输出文件名
 FILE_DOMAIN = "trackers_domain.yaml"
