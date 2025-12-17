@@ -1,6 +1,6 @@
 payload:
   # Domain Trackers List
-  # Count: 1176
+  # Count: 1206
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -29,6 +29,7 @@ payload:
   - DOMAIN,6.tracker.devnak.win
   - DOMAIN,6ahddutb1ucc3cp.ru
   - DOMAIN,6rt.tace.ru
+  - DOMAIN,7.rarbg.me
   - DOMAIN,7p41a8967.wicp.vip
   - DOMAIN,9.rarbg.com
   - DOMAIN,9.rarbg.me
@@ -36,6 +37,7 @@ payload:
   - DOMAIN,9001-digitaladeel-bkwl-launch-oovrfk6mpz.app.codeanywhere.com
   - DOMAIN,94-227-232-84.access.telenet.be
   - DOMAIN,960303.xyz
+  - DOMAIN,a.leopard-raws.org
   - DOMAIN,aaa.army
   - DOMAIN,aarsen.me
   - DOMAIN,abir0dev.github.io
@@ -99,6 +101,7 @@ payload:
   - DOMAIN,bt-tracker.devnak.win
   - DOMAIN,bt-tracker.gamexp.ru
   - DOMAIN,bt.080609.xyz
+  - DOMAIN,bt.3dmgame.com
   - DOMAIN,bt.3kb.xyz
   - DOMAIN,bt.ali213.net
   - DOMAIN,bt.ali213.net00
@@ -114,6 +117,7 @@ payload:
   - DOMAIN,bt.dl1234.com
   - DOMAIN,bt.edwardk.info
   - DOMAIN,bt.endpot.com
+  - DOMAIN,bt.firebit.org
   - DOMAIN,bt.henbt.com
   - DOMAIN,bt.ktkj.com
   - DOMAIN,bt.ktrackers.com
@@ -130,6 +134,7 @@ payload:
   - DOMAIN,bt.rghost.net
   - DOMAIN,bt.sc-ol.com
   - DOMAIN,bt.ttk.artvid.ru
+  - DOMAIN,bt.unionpeer.org
   - DOMAIN,bt.xcty.eu.org
   - DOMAIN,bt.xxx-tracker.com
   - DOMAIN,bt.zlofenix.org
@@ -218,8 +223,10 @@ payload:
   - DOMAIN,eccologic.net
   - DOMAIN,echostar.ddnsfree.com
   - DOMAIN,eddie4.nl
+  - DOMAIN,edge-team.cc
   - DOMAIN,edu.uifr.ru
   - DOMAIN,elementsbrowser.com
+  - DOMAIN,elitezones.ro
   - DOMAIN,engplus.ru
   - DOMAIN,epider.me
   - DOMAIN,escalaenbernal.com
@@ -241,6 +248,7 @@ payload:
   - DOMAIN,free.publictracker.xyz
   - DOMAIN,freedom.1776.ga
   - DOMAIN,freedomalternative.com
+  - DOMAIN,freerainbowtables.com
   - DOMAIN,frp.v2fy.com
   - DOMAIN,frp.v2fy.com00
   - DOMAIN,ftp.pet
@@ -254,6 +262,7 @@ payload:
   - DOMAIN,hbsy.zhuqiy.eu.org
   - DOMAIN,hcbt.pp.ua
   - DOMAIN,hdpt.xyz
+  - DOMAIN,hdreactor.org
   - DOMAIN,hificode.in
   - DOMAIN,highteahop.top
   - DOMAIN,home.kray.pw
@@ -322,6 +331,7 @@ payload:
   - DOMAIN,lloria.fr
   - DOMAIN,ln.mtahost.co
   - DOMAIN,lopatins.ru
+  - DOMAIN,lotus-eater.mywire.org
   - DOMAIN,lucke.fenesisu.moe
   - DOMAIN,lulz.vpndb.org
   - DOMAIN,madiator.com
@@ -352,10 +362,12 @@ payload:
   - DOMAIN,mserver.link
   - DOMAIN,mts.tvbit.co
   - DOMAIN,multi.open-tracker.cf
+  - DOMAIN,music-torrent.net
   - DOMAIN,mvgroup.org
   - DOMAIN,nagios.tks.sumy.ua
   - DOMAIN,netmap.top
   - DOMAIN,new-line.net
+  - DOMAIN,node01.trackerstatus.live
   - DOMAIN,npge.nprotect.com
   - DOMAIN,npupt.com
   - DOMAIN,ns-1.x-fins.com
@@ -423,6 +435,7 @@ payload:
   - DOMAIN,pirate.hz.is
   - DOMAIN,pirate.t-1.org
   - DOMAIN,play.aimisayo.com
+  - DOMAIN,potuk.com
   - DOMAIN,pow7.com
   - DOMAIN,prestige.minimafia.nl
   - DOMAIN,private.anonseed.com
@@ -551,6 +564,7 @@ payload:
   - DOMAIN,tamas3.ynh.fr
   - DOMAIN,tc.animereactor.ru
   - DOMAIN,tcq.zhuqiy.eu.org
+  - DOMAIN,tehconnection.eu
   - DOMAIN,thagoat.rocks
   - DOMAIN,thebytestore.co.uk
   - DOMAIN,themaninashed.com
@@ -585,12 +599,15 @@ payload:
   - DOMAIN,torrent.mp3quran.net
   - DOMAIN,torrent.nwps.ws
   - DOMAIN,torrent.opiums.eu
+  - DOMAIN,torrent.resonatingmedia.com
   - DOMAIN,torrent.tracker.durukanbal.com
   - DOMAIN,torrent.ubuntu.com
   - DOMAIN,torrent.unix-ag.uni-kl.de
   - DOMAIN,torrentclub.online
   - DOMAIN,torrentclub.space
   - DOMAIN,torrentclub.tech
+  - DOMAIN,torrentonline.cc
+  - DOMAIN,torrents-nn.cn
   - DOMAIN,torrents.artixlinux.org
   - DOMAIN,torrents.hikarinokiseki.com
   - DOMAIN,torrents.linuxmint.com
@@ -638,6 +655,7 @@ payload:
   - DOMAIN,tracker-cdn.moeking.me
   - DOMAIN,tracker-cn.zhuqiy.eu.org
   - DOMAIN,tracker-de-2.cutie.dating
+  - DOMAIN,tracker-de.ololosh.space
   - DOMAIN,tracker-rh.zhuqiy.eu.org
   - DOMAIN,tracker-sanopiracy.hopto.org
   - DOMAIN,tracker-udp.anirena.com
@@ -676,6 +694,7 @@ payload:
   - DOMAIN,tracker.babico.name.tr
   - DOMAIN,tracker.baka-sub.cf
   - DOMAIN,tracker.baka.ink
+  - DOMAIN,tracker.baltracker.net
   - DOMAIN,tracker.bangumi.zip
   - DOMAIN,tracker.baravik.org
   - DOMAIN,tracker.beeimg.com
@@ -899,6 +918,7 @@ payload:
   - DOMAIN,tracker.openbittorrrent.com
   - DOMAIN,tracker.openbtba.com
   - DOMAIN,tracker.opendev.cloud
+  - DOMAIN,tracker.opentorrent.top
   - DOMAIN,tracker.opentracker.se
   - DOMAIN,tracker.opentrackr.org
   - DOMAIN,tracker.openwebtorrent.com
@@ -960,13 +980,16 @@ payload:
   - DOMAIN,tracker.sylphix.com
   - DOMAIN,tracker.t-1.org
   - DOMAIN,tracker.t-rb.org
+  - DOMAIN,tracker.tallpenguin.org
   - DOMAIN,tracker.tambovnet.org
   - DOMAIN,tracker.tamersunion.org
+  - DOMAIN,tracker.tasvideos.org
   - DOMAIN,tracker.tcp.exchange
   - DOMAIN,tracker.teambelgium.net
   - DOMAIN,tracker.texoviva.com
   - DOMAIN,tracker.tfile.co
   - DOMAIN,tracker.tfile.me
+  - DOMAIN,tracker.theempire.bz
   - DOMAIN,tracker.theoks.net
   - DOMAIN,tracker.therarbg.com
   - DOMAIN,tracker.therarbg.to
@@ -977,6 +1000,7 @@ payload:
   - DOMAIN,tracker.torrentbay.to
   - DOMAIN,tracker.torrentbytes.net
   - DOMAIN,tracker.torrentino.com
+  - DOMAIN,tracker.torrentleech.org
   - DOMAIN,tracker.torrentsnows.com
   - DOMAIN,tracker.torrentuje.me
   - DOMAIN,tracker.torrenty.org
@@ -1128,9 +1152,12 @@ payload:
   - DOMAIN,www.bit-hdtv.com
   - DOMAIN,www.bitseduce.com
   - DOMAIN,www.biztorrents.com
+  - DOMAIN,www.blackcats-games.net
   - DOMAIN,www.chouchou.club
   - DOMAIN,www.chouchou.club80
   - DOMAIN,www.eddie4.nl
+  - DOMAIN,www.elitezones.ro
+  - DOMAIN,www.freerainbowtables.com
   - DOMAIN,www.genesis-sp.org
   - DOMAIN,www.legittorrents.info
   - DOMAIN,www.loushao.net
@@ -1143,6 +1170,8 @@ payload:
   - DOMAIN,www.shnflac.net
   - DOMAIN,www.siambt.com
   - DOMAIN,www.skyts.net
+  - DOMAIN,www.thegeeks.bz
+  - DOMAIN,www.theplace.bz
   - DOMAIN,www.torrent-downloads.to
   - DOMAIN,www.torrent.eu.org
   - DOMAIN,www.torrentsnipe.info
@@ -1157,6 +1186,7 @@ payload:
   - DOMAIN,x.paranoid.agency
   - DOMAIN,x.t-1.org
   - DOMAIN,x7x.up.railway.app
+  - DOMAIN,xbtrutor.com
   - DOMAIN,xtremewrestlingtorrents.net
   - DOMAIN,xtremex.herokuapp.com
   - DOMAIN,xxx.xxtor.com
