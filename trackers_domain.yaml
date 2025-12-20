@@ -1,5 +1,5 @@
 payload:
-  # Domain Trackers List
+  # Tracker Domains (Clash)
   # Count: 1211
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
