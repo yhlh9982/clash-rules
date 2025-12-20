@@ -37,21 +37,9 @@ rule-providers:
     behavior: classical
     url: "https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_ip.yaml"
     interval: 86400
-
-  tracker-fakeip-filter:
-    type: http
-    behavior: domain
-    url: https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain_raw.txt
-    interval: 86400
 ```
 
 ```yaml
-  fake-ip-filter: # Fake IP 模式生效范围，匹配到的域名不会返回 Fake IP
-    - +.lan 
-    - +.local 
-    - rule-set:tracker-fakeip-filter
-    - geosite:cn 
-
 rules:
   - RULE-SET,trackers-ip,直连,no-resolve
   - RULE-SET,trackers-domain,直连
