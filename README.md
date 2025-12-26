@@ -37,9 +37,17 @@ rule-providers:
     behavior: classical
     url: "https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_ip.yaml"
     interval: 86400
-```
 
-```yaml
+  Btfkbl:
+    type: http
+    behavior: domain
+    format: text
+    url: "https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain_raw.txt"
+    interval: 86400
+```
+  fake-ip-filter:
+    - rule-set:Btfkbl
+
 rules:
   - RULE-SET,trackers-ip,直连,no-resolve
   - RULE-SET,trackers-domain,直连
