@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1214
+  # Count: 1216
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -184,6 +184,7 @@ payload:
   - DOMAIN,cn.pcfreetime.com
   - DOMAIN,cny.fan
   - DOMAIN,code2chicken.nl
+  - DOMAIN,colivioo.com
   - DOMAIN,commento.getblog.cn
   - DOMAIN,concen.org
   - DOMAIN,connect.swifte.space
@@ -1034,6 +1035,7 @@ payload:
   - DOMAIN,tracker.vectahosting.eu
   - DOMAIN,tracker.vraphim.com
   - DOMAIN,tracker.vrpnet.org
+  - DOMAIN,tracker.vulnix.sh
   - DOMAIN,tracker.waaa.moe
   - DOMAIN,tracker.webtorrent.dev
   - DOMAIN,tracker.wellknownclub.net
