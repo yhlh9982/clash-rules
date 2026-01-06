@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1216
+  # Count: 1217
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -1181,6 +1181,7 @@ payload:
   - DOMAIN,www.siambt.com
   - DOMAIN,www.skyts.net
   - DOMAIN,www.thegeeks.bz
+  - DOMAIN,www.theoccult.bz
   - DOMAIN,www.theplace.bz
   - DOMAIN,www.torrent-downloads.to
   - DOMAIN,www.torrent.eu.org
