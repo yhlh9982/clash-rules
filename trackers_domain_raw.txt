@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1217
+# Count: 1218
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -847,6 +847,7 @@ tracker.iro.moe
 tracker.ismaarino.com
 tracker.istole.it
 tracker.itscraftsoftware.my.id
+tracker.ixuexi.click
 tracker.jamesthebard.net
 tracker.jdx3.org
 tracker.jiesen.life
