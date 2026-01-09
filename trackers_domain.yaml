@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1219
+  # Count: 1221
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -727,6 +727,7 @@ payload:
   - DOMAIN,tracker.btsync.gq
   - DOMAIN,tracker.btzero.net
   - DOMAIN,tracker.btzoo.eu
+  - DOMAIN,tracker.bug38.com
   - DOMAIN,tracker.bulao.ren
   - DOMAIN,tracker.bz
   - DOMAIN,tracker.calculate.ru
@@ -795,6 +796,7 @@ payload:
   - DOMAIN,tracker.fatkhoala.org
   - DOMAIN,tracker.fdn.fr
   - DOMAIN,tracker.feb217.tk
+  - DOMAIN,tracker.file09.com
   - DOMAIN,tracker.filemail.com
   - DOMAIN,tracker.filepit.to
   - DOMAIN,tracker.files.fm

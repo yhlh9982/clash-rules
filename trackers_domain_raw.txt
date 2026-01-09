@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1219
+# Count: 1221
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -727,6 +727,7 @@ tracker.btorrent.xyz
 tracker.btsync.gq
 tracker.btzero.net
 tracker.btzoo.eu
+tracker.bug38.com
 tracker.bulao.ren
 tracker.bz
 tracker.calculate.ru
@@ -795,6 +796,7 @@ tracker.fastdownload.xyz
 tracker.fatkhoala.org
 tracker.fdn.fr
 tracker.feb217.tk
+tracker.file09.com
 tracker.filemail.com
 tracker.filepit.to
 tracker.files.fm
