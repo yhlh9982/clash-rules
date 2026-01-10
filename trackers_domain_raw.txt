@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1221
+# Count: 1222
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -934,6 +934,7 @@ tracker.opentracker.se
 tracker.opentrackr.org
 tracker.openwebtorrent.com
 tracker.openzim.org
+tracker.orsvarn.com
 tracker.parrotlinux.org
 tracker.parrotsec.org
 tracker.pcfreetime.com

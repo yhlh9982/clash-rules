@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1221
+  # Count: 1222
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -934,6 +934,7 @@ payload:
   - DOMAIN,tracker.opentrackr.org
   - DOMAIN,tracker.openwebtorrent.com
   - DOMAIN,tracker.openzim.org
+  - DOMAIN,tracker.orsvarn.com
   - DOMAIN,tracker.parrotlinux.org
   - DOMAIN,tracker.parrotsec.org
   - DOMAIN,tracker.pcfreetime.com
