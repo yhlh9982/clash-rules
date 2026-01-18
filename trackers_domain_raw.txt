@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1222
+# Count: 1223
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -893,6 +893,7 @@ tracker.lyretain.site
 tracker.m-team.cc
 tracker.madtia.cc
 tracker.magnetoo.io
+tracker.maya.no.eu.org
 tracker.merded.xyz
 tracker.merded.xyz00
 tracker.mg64.net
