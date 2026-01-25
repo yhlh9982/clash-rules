@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1223
+  # Count: 1224
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -330,6 +330,7 @@ payload:
   - DOMAIN,lima-peru.subventas.com
   - DOMAIN,line-net.ru
   - DOMAIN,linfan.moe
+  - DOMAIN,litter.fluffykitten.moe
   - DOMAIN,llideong.cn
   - DOMAIN,lloria.fr
   - DOMAIN,ln.mtahost.co
