@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1224
+# Count: 1225
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -422,6 +422,7 @@ opentracker.8880085.xyz
 opentracker.acgnx.com
 opentracker.acgnx.se
 opentracker.cc
+opentracker.co
 opentracker.i2p.rocks
 opentracker.io
 opentracker.xyz
