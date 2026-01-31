@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1225
+  # Count: 1227
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -974,6 +974,7 @@ payload:
   - DOMAIN,tracker.sakurato.art
   - DOMAIN,tracker.sbsub.com
   - DOMAIN,tracker.servequake.com
+  - DOMAIN,tracker.sharebro.in
   - DOMAIN,tracker.sheesh.rip
   - DOMAIN,tracker.shittyurl.org
   - DOMAIN,tracker.shkinev.me
@@ -1033,6 +1034,7 @@ payload:
   - DOMAIN,tracker.tryhackx.org
   - DOMAIN,tracker.tvgc.win
   - DOMAIN,tracker.tvunderground.org.ru
+  - DOMAIN,tracker.umunu.ru
   - DOMAIN,tracker.uraniumhexafluori.de
   - DOMAIN,tracker.uw0.xyz
   - DOMAIN,tracker.v6speed.org
