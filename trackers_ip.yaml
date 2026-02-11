@@ -1,6 +1,6 @@
 payload:
   # Tracker IPs (Clash)
-  # Count: 917
+  # Count: 918
   - IP-CIDR,101.99.94.187/32
   - IP-CIDR,103.122.21.50/32
   - IP-CIDR,103.251.166.126/32
@@ -461,6 +461,7 @@ payload:
   - IP-CIDR6,200:1e2f:e608:eb3a:2bf:1e62:87ba:e2f7/128
   - IP-CIDR,201.13.49.112/32
   - IP-CIDR,201.13.49.202/32
+  - IP-CIDR,201.13.50.75/32
   - IP-CIDR,201.13.51.82/32
   - IP-CIDR,201.42.214.55/32
   - IP-CIDR,201.43.209.254/32

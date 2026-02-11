@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1229
+  # Count: 1230
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -392,6 +392,7 @@ payload:
   - DOMAIN,odd-hd.fr
   - DOMAIN,oh.fuuuuuck.com
   - DOMAIN,on.springsunday.net
+  - DOMAIN,onioniot.tk
   - DOMAIN,open-tracker.demonoid.ch
   - DOMAIN,open-v6.demonoid.ch
   - DOMAIN,open.4ever.tk
