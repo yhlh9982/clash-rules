@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1231
+  # Count: 1232
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -77,6 +77,7 @@ payload:
   - DOMAIN,bananas.space
   - DOMAIN,bandito.byterunner.io
   - DOMAIN,bclearning.top
+  - DOMAIN,bdremux.club
   - DOMAIN,bedro.cloud
   - DOMAIN,ben.kerbertools.xyz
   - DOMAIN,betelgeuse.freeddns.org
