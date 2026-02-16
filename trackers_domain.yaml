@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1232
+  # Count: 1235
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -372,6 +372,7 @@ payload:
   - DOMAIN,music-torrent.net
   - DOMAIN,mvgroup.org
   - DOMAIN,nagios.tks.sumy.ua
+  - DOMAIN,navegador.click
   - DOMAIN,netmap.top
   - DOMAIN,new-line.net
   - DOMAIN,node01.edge-team.cc
@@ -791,6 +792,7 @@ payload:
   - DOMAIN,tracker.edkj.club
   - DOMAIN,tracker.edoardocolombo.eu
   - DOMAIN,tracker.electro-torrent.pl
+  - DOMAIN,tracker.emule.best
   - DOMAIN,tracker.encrypted-data.xyz
   - DOMAIN,tracker.enitin.xyz
   - DOMAIN,tracker.etree.org
@@ -843,6 +845,7 @@ payload:
   - DOMAIN,tracker.home.kmzs123.cn
   - DOMAIN,tracker.iamhansen.xyz
   - DOMAIN,tracker.ilibr.org
+  - DOMAIN,tracker.imgdump.lol
   - DOMAIN,tracker.imgoingto.icu
   - DOMAIN,tracker.internetwarriors.net
   - DOMAIN,tracker.iochimari.moe
