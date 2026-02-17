@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1235
+  # Count: 1244
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -630,6 +630,7 @@ payload:
   - DOMAIN,torrentsmd.eu
   - DOMAIN,torrentsmd.me
   - DOMAIN,torrenttracker.nwc.acsalaska.net
+  - DOMAIN,torrentvpn.club
   - DOMAIN,torrentzilla.org
   - DOMAIN,torrust.canofsocks.com
   - DOMAIN,touhou.kawaiiarts.com
@@ -843,6 +844,7 @@ payload:
   - DOMAIN,tracker.hifitechindia.com
   - DOMAIN,tracker.hiyj.cn
   - DOMAIN,tracker.home.kmzs123.cn
+  - DOMAIN,tracker.huadongblower.xyz
   - DOMAIN,tracker.iamhansen.xyz
   - DOMAIN,tracker.ilibr.org
   - DOMAIN,tracker.imgdump.lol
@@ -904,6 +906,7 @@ payload:
   - DOMAIN,tracker.magnetoo.io
   - DOMAIN,tracker.manager.v6.navy
   - DOMAIN,tracker.maya.no.eu.org
+  - DOMAIN,tracker.memelords.xyz
   - DOMAIN,tracker.merded.xyz
   - DOMAIN,tracker.merded.xyz00
   - DOMAIN,tracker.mg64.net
@@ -927,6 +930,7 @@ payload:
   - DOMAIN,tracker.noobsubs.net
   - DOMAIN,tracker.novalayer.org
   - DOMAIN,tracker.novaopcj.eu.org
+  - DOMAIN,tracker.novy.vip
   - DOMAIN,tracker.nucozer-tracker.ml
   - DOMAIN,tracker.nyaa.tk
   - DOMAIN,tracker.nyaa.uk
@@ -971,7 +975,9 @@ payload:
   - DOMAIN,tracker.publictorrent.net
   - DOMAIN,tracker.publictracker.xyz
   - DOMAIN,tracker.pussytorrents.org
+  - DOMAIN,tracker.puvvadi.net
   - DOMAIN,tracker.qingwa.pro
+  - DOMAIN,tracker.qingwapt.org
   - DOMAIN,tracker.qu.ax
   - DOMAIN,tracker.quix.cf
   - DOMAIN,tracker.rainbowisland.co
@@ -979,6 +985,7 @@ payload:
   - DOMAIN,tracker.renfei.net80
   - DOMAIN,tracker.rescuecrew7.com
   - DOMAIN,tracker.rev.pm
+  - DOMAIN,tracker.riverarmy.xyz
   - DOMAIN,tracker.sakurato.art
   - DOMAIN,tracker.sbsub.com
   - DOMAIN,tracker.servequake.com
@@ -1023,6 +1030,7 @@ payload:
   - DOMAIN,tracker.torrent.eu.org
   - DOMAIN,tracker.torrent.to
   - DOMAIN,tracker.torrentbay.to
+  - DOMAIN,tracker.torrentbd.net
   - DOMAIN,tracker.torrentbytes.net
   - DOMAIN,tracker.torrentino.com
   - DOMAIN,tracker.torrentleech.org
@@ -1145,6 +1153,7 @@ payload:
   - DOMAIN,u.peer-exchange.download
   - DOMAIN,u4.trakx.crim.ist
   - DOMAIN,u6.trakx.crim.ist
+  - DOMAIN,uabits.today
   - DOMAIN,uatracker.net
   - DOMAIN,udp-tracker.shittyurl.org
   - DOMAIN,udp.tracker.projectk.org

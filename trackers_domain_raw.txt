@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1235
+# Count: 1244
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -630,6 +630,7 @@ torrentsmd.com80
 torrentsmd.eu
 torrentsmd.me
 torrenttracker.nwc.acsalaska.net
+torrentvpn.club
 torrentzilla.org
 torrust.canofsocks.com
 touhou.kawaiiarts.com
@@ -843,6 +844,7 @@ tracker.hifimarket.in
 tracker.hifitechindia.com
 tracker.hiyj.cn
 tracker.home.kmzs123.cn
+tracker.huadongblower.xyz
 tracker.iamhansen.xyz
 tracker.ilibr.org
 tracker.imgdump.lol
@@ -904,6 +906,7 @@ tracker.madtia.cc
 tracker.magnetoo.io
 tracker.manager.v6.navy
 tracker.maya.no.eu.org
+tracker.memelords.xyz
 tracker.merded.xyz
 tracker.merded.xyz00
 tracker.mg64.net
@@ -927,6 +930,7 @@ tracker.nitrix.me
 tracker.noobsubs.net
 tracker.novalayer.org
 tracker.novaopcj.eu.org
+tracker.novy.vip
 tracker.nucozer-tracker.ml
 tracker.nyaa.tk
 tracker.nyaa.uk
@@ -971,7 +975,9 @@ tracker.publicbt.com
 tracker.publictorrent.net
 tracker.publictracker.xyz
 tracker.pussytorrents.org
+tracker.puvvadi.net
 tracker.qingwa.pro
+tracker.qingwapt.org
 tracker.qu.ax
 tracker.quix.cf
 tracker.rainbowisland.co
@@ -979,6 +985,7 @@ tracker.renfei.net
 tracker.renfei.net80
 tracker.rescuecrew7.com
 tracker.rev.pm
+tracker.riverarmy.xyz
 tracker.sakurato.art
 tracker.sbsub.com
 tracker.servequake.com
@@ -1023,6 +1030,7 @@ tracker.tnl.one
 tracker.torrent.eu.org
 tracker.torrent.to
 tracker.torrentbay.to
+tracker.torrentbd.net
 tracker.torrentbytes.net
 tracker.torrentino.com
 tracker.torrentleech.org
@@ -1145,6 +1153,7 @@ ttracker.just-h.party
 u.peer-exchange.download
 u4.trakx.crim.ist
 u6.trakx.crim.ist
+uabits.today
 uatracker.net
 udp-tracker.shittyurl.org
 udp.tracker.projectk.org
