@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1244
+# Count: 1245
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -379,6 +379,7 @@ node01.edge-team.cc
 node01.madtia.cc
 node01.torrentonline.cc
 node01.trackerstatus.live
+node02.madtia.cc
 node02.torrentonline.cc
 npge.nprotect.com
 npupt.com

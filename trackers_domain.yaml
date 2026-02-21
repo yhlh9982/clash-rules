@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1244
+  # Count: 1245
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -379,6 +379,7 @@ payload:
   - DOMAIN,node01.madtia.cc
   - DOMAIN,node01.torrentonline.cc
   - DOMAIN,node01.trackerstatus.live
+  - DOMAIN,node02.madtia.cc
   - DOMAIN,node02.torrentonline.cc
   - DOMAIN,npge.nprotect.com
   - DOMAIN,npupt.com
