@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1245
+  # Count: 1246
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -86,6 +86,7 @@ payload:
   - DOMAIN,bithq.org
   - DOMAIN,bittorrent-tracker.e-n-c-r-y-p-t.net
   - DOMAIN,bittorrent.gongt.net
+  - DOMAIN,bittorrent.kali.org
   - DOMAIN,bittorrent.service.gongt.me
   - DOMAIN,bittracker.nekosunevr.co.uk
   - DOMAIN,bjlt.zhuqiy.eu.org

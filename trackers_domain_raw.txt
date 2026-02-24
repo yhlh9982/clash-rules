@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1245
+# Count: 1246
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -86,6 +86,7 @@ bigfoot1942.sektori.org
 bithq.org
 bittorrent-tracker.e-n-c-r-y-p-t.net
 bittorrent.gongt.net
+bittorrent.kali.org
 bittorrent.service.gongt.me
 bittracker.nekosunevr.co.uk
 bjlt.zhuqiy.eu.org
