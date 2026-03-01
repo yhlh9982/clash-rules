@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1246
+# Count: 1247
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -922,6 +922,7 @@ tracker.moeking.eu.org
 tracker.moeking.me
 tracker.monikadesign.uk
 tracker.monitorit4.me
+tracker.morian.icu
 tracker.moxing.party
 tracker.msm8916.com
 tracker.mywaifu.best

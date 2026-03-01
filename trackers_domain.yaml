@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1246
+  # Count: 1247
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -922,6 +922,7 @@ payload:
   - DOMAIN,tracker.moeking.me
   - DOMAIN,tracker.monikadesign.uk
   - DOMAIN,tracker.monitorit4.me
+  - DOMAIN,tracker.morian.icu
   - DOMAIN,tracker.moxing.party
   - DOMAIN,tracker.msm8916.com
   - DOMAIN,tracker.mywaifu.best
