@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1247
+  # Count: 1256
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -28,6 +28,8 @@ payload:
   - DOMAIN,5rt.tace.ru
   - DOMAIN,6.pocketnet.app
   - DOMAIN,6.tracker.devnak.win
+  - DOMAIN,60-fps.org
+  - DOMAIN,61626c.net
   - DOMAIN,6ahddutb1ucc3cp.ru
   - DOMAIN,6rt.tace.ru
   - DOMAIN,6wbrmd4wodeewdykfw362gmlbeo26njc5zmtuxdvtomehpozzjja.b32.i2p
@@ -52,6 +54,7 @@ payload:
   - DOMAIN,agsvpt.trackers.work
   - DOMAIN,agusiq-torrents.pl
   - DOMAIN,all4nothin.net
+  - DOMAIN,alltorrents.net
   - DOMAIN,alpha.torrenttracker.nl
   - DOMAIN,amigacity.xyz
   - DOMAIN,anidex.moe
@@ -154,6 +157,7 @@ payload:
   - DOMAIN,bt2.careland.com.cn
   - DOMAIN,bt2.edwardk.info
   - DOMAIN,btfile.sdo.com
+  - DOMAIN,btn-prod.ghostchu-services.top
   - DOMAIN,btracker.top
   - DOMAIN,btt.service.gongt.me
   - DOMAIN,bttracker.crunchbanglinux.org
@@ -231,6 +235,7 @@ payload:
   - DOMAIN,eddie4.nl
   - DOMAIN,edge-team.cc
   - DOMAIN,edu.uifr.ru
+  - DOMAIN,ehtracker.org
   - DOMAIN,elementsbrowser.com
   - DOMAIN,elitezones.ro
   - DOMAIN,engplus.ru
@@ -262,6 +267,7 @@ payload:
   - DOMAIN,globalwave.no-ip.org
   - DOMAIN,glotorrents.pw
   - DOMAIN,grifon.info
+  - DOMAIN,gshk.happy-host.com
   - DOMAIN,gwp2-v19.rinet.ru
   - DOMAIN,h4.trakx.nibba.trade
   - DOMAIN,h85-235-17-132.cust.a3fiber.se
@@ -371,6 +377,7 @@ payload:
   - DOMAIN,mts.tvbit.co
   - DOMAIN,multi.open-tracker.cf
   - DOMAIN,music-torrent.net
+  - DOMAIN,mvgforumtracker.mvgroup.org
   - DOMAIN,mvgroup.org
   - DOMAIN,nagios.tks.sumy.ua
   - DOMAIN,navegador.click
@@ -1189,6 +1196,7 @@ payload:
   - DOMAIN,www.2600.com
   - DOMAIN,www.all4nothin.net
   - DOMAIN,www.ansktracker.net
+  - DOMAIN,www.arabp2p.net
   - DOMAIN,www.bit-hdtv.com
   - DOMAIN,www.bitseduce.com
   - DOMAIN,www.biztorrents.com
@@ -1213,6 +1221,7 @@ payload:
   - DOMAIN,www.thegeeks.bz
   - DOMAIN,www.theoccult.bz
   - DOMAIN,www.theplace.bz
+  - DOMAIN,www.thetradersden.org
   - DOMAIN,www.torrent-downloads.to
   - DOMAIN,www.torrent.eu.org
   - DOMAIN,www.torrentsnipe.info
