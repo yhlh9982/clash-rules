@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1256
+  # Count: 1258
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -281,6 +281,7 @@ payload:
   - DOMAIN,home.yxgz.club
   - DOMAIN,home.yxgz.vip
   - DOMAIN,houniao.ddns.net
+  - DOMAIN,http1.torrust-tracker-demo.com
   - DOMAIN,htz3.noho.st
   - DOMAIN,hz.is
   - DOMAIN,hzzwly.gq
@@ -570,6 +571,7 @@ payload:
   - DOMAIN,t.nyaatracker.com
   - DOMAIN,t.overflow.biz
   - DOMAIN,t.peer-exchange.download
+  - DOMAIN,t.pldm.ml
   - DOMAIN,t.publictracker.xyz
   - DOMAIN,t.quic.ws
   - DOMAIN,t.ubits.club

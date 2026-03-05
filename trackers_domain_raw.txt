@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1256
+# Count: 1258
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -281,6 +281,7 @@ home.kray.pw
 home.yxgz.club
 home.yxgz.vip
 houniao.ddns.net
+http1.torrust-tracker-demo.com
 htz3.noho.st
 hz.is
 hzzwly.gq
@@ -570,6 +571,7 @@ t.jaekr.sh
 t.nyaatracker.com
 t.overflow.biz
 t.peer-exchange.download
+t.pldm.ml
 t.publictracker.xyz
 t.quic.ws
 t.ubits.club
