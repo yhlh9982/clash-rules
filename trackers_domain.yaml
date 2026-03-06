@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1258
+  # Count: 1259
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -1088,6 +1088,7 @@ payload:
   - DOMAIN,tracker.yangxiaoguozi.cn
   - DOMAIN,tracker.yarr.pt
   - DOMAIN,tracker.yemekyedim.com
+  - DOMAIN,tracker.yggleak.top
   - DOMAIN,tracker.ygsub.com
   - DOMAIN,tracker.ykat.xyz
   - DOMAIN,tracker.yoshi210.com

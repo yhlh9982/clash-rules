@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1258
+# Count: 1259
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -1088,6 +1088,7 @@ tracker.xor.st
 tracker.yangxiaoguozi.cn
 tracker.yarr.pt
 tracker.yemekyedim.com
+tracker.yggleak.top
 tracker.ygsub.com
 tracker.ykat.xyz
 tracker.yoshi210.com
