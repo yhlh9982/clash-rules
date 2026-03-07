@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1259
+# Count: 1260
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -1171,6 +1171,7 @@ uatracker.net
 udp-tracker.shittyurl.org
 udp.tracker.projectk.org
 udp.yarr.pt
+udp1.torrust-tracker-demo.com
 ulfbrueggemann.no-ip.org
 unknownsite.de
 uploads.gamecoast.net

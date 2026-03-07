@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1259
+  # Count: 1260
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -1171,6 +1171,7 @@ payload:
   - DOMAIN,udp-tracker.shittyurl.org
   - DOMAIN,udp.tracker.projectk.org
   - DOMAIN,udp.yarr.pt
+  - DOMAIN,udp1.torrust-tracker-demo.com
   - DOMAIN,ulfbrueggemann.no-ip.org
   - DOMAIN,unknownsite.de
   - DOMAIN,uploads.gamecoast.net
