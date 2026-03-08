@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1260
+  # Count: 1262
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -809,6 +809,7 @@ payload:
   - DOMAIN,tracker.enitin.xyz
   - DOMAIN,tracker.etree.org
   - DOMAIN,tracker.ex.ua
+  - DOMAIN,tracker.exe.in.th
   - DOMAIN,tracker.expli.top
   - DOMAIN,tracker.fansub.id
   - DOMAIN,tracker.farted.net
@@ -937,6 +938,7 @@ payload:
   - DOMAIN,tracker.mywaifu.best
   - DOMAIN,tracker.nanoha.org
   - DOMAIN,tracker.nartlof.com.br
+  - DOMAIN,tracker.nekomi.cn
   - DOMAIN,tracker.netmap.top
   - DOMAIN,tracker.nitrix.me
   - DOMAIN,tracker.noobsubs.net
