@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1262
+# Count: 1263
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -517,6 +517,7 @@ run-2.publictracker.xyz
 run.publictracker.xyz
 rutorrent.frontline-mod.com
 ryjer.com
+s1124554.ha012.t.mydomain.zone
 s926723.ha016.t.mydomain.zone
 sabross.xyz
 saltwood.top

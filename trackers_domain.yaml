@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1262
+  # Count: 1263
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -517,6 +517,7 @@ payload:
   - DOMAIN,run.publictracker.xyz
   - DOMAIN,rutorrent.frontline-mod.com
   - DOMAIN,ryjer.com
+  - DOMAIN,s1124554.ha012.t.mydomain.zone
   - DOMAIN,s926723.ha016.t.mydomain.zone
   - DOMAIN,sabross.xyz
   - DOMAIN,saltwood.top
