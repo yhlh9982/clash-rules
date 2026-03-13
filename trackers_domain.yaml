@@ -1,9 +1,10 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1263
+  # Count: 1265
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
+  - DOMAIN,004430.xyz
   - DOMAIN,0123456789nonexistent.com
   - DOMAIN,0205.uptm.ch
   - DOMAIN,0d.kebhana.mx
@@ -691,6 +692,7 @@ payload:
   - DOMAIN,tracker-v6.opendev.cloud
   - DOMAIN,tracker-zhuqiy.dgj055.icu
   - DOMAIN,tracker-zhuqiy.xn--1r3au8b.space
+  - DOMAIN,tracker.004430.xyz
   - DOMAIN,tracker.0o.is
   - DOMAIN,tracker.0x.tf
   - DOMAIN,tracker.0x7c0.com

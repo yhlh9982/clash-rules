@@ -1,9 +1,10 @@
 # Tracker Domains (raw)
-# Count: 1263
+# Count: 1265
 
 00.alarmasqueretaro.com
 00.mercax.com
 00.xxtor.com
+004430.xyz
 0123456789nonexistent.com
 0205.uptm.ch
 0d.kebhana.mx
@@ -691,6 +692,7 @@ tracker-us.silksa.co.za
 tracker-v6.opendev.cloud
 tracker-zhuqiy.dgj055.icu
 tracker-zhuqiy.xn--1r3au8b.space
+tracker.004430.xyz
 tracker.0o.is
 tracker.0x.tf
 tracker.0x7c0.com
