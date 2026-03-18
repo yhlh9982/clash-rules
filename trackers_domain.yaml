@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1272
+  # Count: 1273
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -1228,6 +1228,7 @@ payload:
   - DOMAIN,www.loushao.net80
   - DOMAIN,www.megatorrents.kg
   - DOMAIN,www.mvgroup.org
+  - DOMAIN,www.nartlof.com
   - DOMAIN,www.nartlof.com.br
   - DOMAIN,www.peckservers.com
   - DOMAIN,www.proxmox.com

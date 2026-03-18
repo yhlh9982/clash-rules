@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1272
+# Count: 1273
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -1228,6 +1228,7 @@ www.loushao.net
 www.loushao.net80
 www.megatorrents.kg
 www.mvgroup.org
+www.nartlof.com
 www.nartlof.com.br
 www.peckservers.com
 www.proxmox.com
