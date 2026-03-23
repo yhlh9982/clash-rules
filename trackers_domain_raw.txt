@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1273
+# Count: 1278
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -166,6 +166,7 @@ bttracker.debian.org
 btx.anifilm.tv
 bubu.mapfactor.com
 buddyfly.top
+bughome.de
 buny.uk
 burmese.app
 bvarf.tracker.sh
@@ -402,6 +403,7 @@ ns349743.ip-91-121-106.eu
 ns575949.ip-51-222-82.net
 nullzone.fr
 nyaa.tracker.wf
+nyaaplus.i2p
 o-unkusrx.cloud.okteto.net
 odd-hd.fr
 oh.fuuuuuck.com
@@ -942,6 +944,7 @@ tracker.monikadesign.uk
 tracker.monitorit4.me
 tracker.morian.icu
 tracker.moxing.party
+tracker.mrhei.tech
 tracker.msm8916.com
 tracker.mywaifu.best
 tracker.nanoha.org
@@ -956,6 +959,7 @@ tracker.novy.vip
 tracker.nucozer-tracker.ml
 tracker.nyaa.tk
 tracker.nyaa.uk
+tracker.nyaa2p.i2p
 tracker.nyacat.pw
 tracker.nyap2p.com
 tracker.ocnix.net
@@ -1197,6 +1201,7 @@ vibe.community
 vibe.sleepyinternetfun.xyz
 vm3268418.24ssd.had.wf
 voxhost.fr
+vps-c1adea63.vps.ovh.net
 vps-dd0a0715.vps.ovh.net
 vps02.net.orel.ru
 w.wwwww.wtf

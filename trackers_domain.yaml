@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1273
+  # Count: 1278
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -166,6 +166,7 @@ payload:
   - DOMAIN,btx.anifilm.tv
   - DOMAIN,bubu.mapfactor.com
   - DOMAIN,buddyfly.top
+  - DOMAIN,bughome.de
   - DOMAIN,buny.uk
   - DOMAIN,burmese.app
   - DOMAIN,bvarf.tracker.sh
@@ -402,6 +403,7 @@ payload:
   - DOMAIN,ns575949.ip-51-222-82.net
   - DOMAIN,nullzone.fr
   - DOMAIN,nyaa.tracker.wf
+  - DOMAIN,nyaaplus.i2p
   - DOMAIN,o-unkusrx.cloud.okteto.net
   - DOMAIN,odd-hd.fr
   - DOMAIN,oh.fuuuuuck.com
@@ -942,6 +944,7 @@ payload:
   - DOMAIN,tracker.monitorit4.me
   - DOMAIN,tracker.morian.icu
   - DOMAIN,tracker.moxing.party
+  - DOMAIN,tracker.mrhei.tech
   - DOMAIN,tracker.msm8916.com
   - DOMAIN,tracker.mywaifu.best
   - DOMAIN,tracker.nanoha.org
@@ -956,6 +959,7 @@ payload:
   - DOMAIN,tracker.nucozer-tracker.ml
   - DOMAIN,tracker.nyaa.tk
   - DOMAIN,tracker.nyaa.uk
+  - DOMAIN,tracker.nyaa2p.i2p
   - DOMAIN,tracker.nyacat.pw
   - DOMAIN,tracker.nyap2p.com
   - DOMAIN,tracker.ocnix.net
@@ -1197,6 +1201,7 @@ payload:
   - DOMAIN,vibe.sleepyinternetfun.xyz
   - DOMAIN,vm3268418.24ssd.had.wf
   - DOMAIN,voxhost.fr
+  - DOMAIN,vps-c1adea63.vps.ovh.net
   - DOMAIN,vps-dd0a0715.vps.ovh.net
   - DOMAIN,vps02.net.orel.ru
   - DOMAIN,w.wwwww.wtf
