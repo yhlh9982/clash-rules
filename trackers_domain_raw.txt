@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1278
+# Count: 1279
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -710,6 +710,7 @@ tracker.23794.top
 tracker.3moredays.com
 tracker.4.babico.name.tr
 tracker.6.babico.name.tr
+tracker.7471.top
 tracker.aburaya.live
 tracker.acgnx.se
 tracker.aibt.xyz

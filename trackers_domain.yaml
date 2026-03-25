@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1278
+  # Count: 1279
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -710,6 +710,7 @@ payload:
   - DOMAIN,tracker.3moredays.com
   - DOMAIN,tracker.4.babico.name.tr
   - DOMAIN,tracker.6.babico.name.tr
+  - DOMAIN,tracker.7471.top
   - DOMAIN,tracker.aburaya.live
   - DOMAIN,tracker.acgnx.se
   - DOMAIN,tracker.aibt.xyz
