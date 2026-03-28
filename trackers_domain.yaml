@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1279
+  # Count: 1280
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -31,6 +31,7 @@ payload:
   - DOMAIN,6.tracker.devnak.win
   - DOMAIN,60-fps.org
   - DOMAIN,61626c.net
+  - DOMAIN,66691337.xyz
   - DOMAIN,6ahddutb1ucc3cp.ru
   - DOMAIN,6rt.tace.ru
   - DOMAIN,6wbrmd4wodeewdykfw362gmlbeo26njc5zmtuxdvtomehpozzjja.b32.i2p

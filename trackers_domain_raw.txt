@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1279
+# Count: 1280
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -31,6 +31,7 @@
 6.tracker.devnak.win
 60-fps.org
 61626c.net
+66691337.xyz
 6ahddutb1ucc3cp.ru
 6rt.tace.ru
 6wbrmd4wodeewdykfw362gmlbeo26njc5zmtuxdvtomehpozzjja.b32.i2p
