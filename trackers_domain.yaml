@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1280
+  # Count: 1282
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -961,6 +961,7 @@ payload:
   - DOMAIN,tracker.nucozer-tracker.ml
   - DOMAIN,tracker.nyaa.tk
   - DOMAIN,tracker.nyaa.uk
+  - DOMAIN,tracker.nyaa.vc
   - DOMAIN,tracker.nyaa2p.i2p
   - DOMAIN,tracker.nyacat.pw
   - DOMAIN,tracker.nyap2p.com
@@ -1093,6 +1094,7 @@ payload:
   - DOMAIN,tracker.webtorrent.dev
   - DOMAIN,tracker.wellknownclub.net
   - DOMAIN,tracker.wepzone.net
+  - DOMAIN,tracker.wildkat.net
   - DOMAIN,tracker.wsaoa.eu.org
   - DOMAIN,tracker.x6c.co
   - DOMAIN,tracker.xdvdz.com

@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1280
+# Count: 1282
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -961,6 +961,7 @@ tracker.novy.vip
 tracker.nucozer-tracker.ml
 tracker.nyaa.tk
 tracker.nyaa.uk
+tracker.nyaa.vc
 tracker.nyaa2p.i2p
 tracker.nyacat.pw
 tracker.nyap2p.com
@@ -1093,6 +1094,7 @@ tracker.waaa.moe
 tracker.webtorrent.dev
 tracker.wellknownclub.net
 tracker.wepzone.net
+tracker.wildkat.net
 tracker.wsaoa.eu.org
 tracker.x6c.co
 tracker.xdvdz.com
