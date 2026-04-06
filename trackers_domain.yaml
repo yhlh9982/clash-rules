@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1284
+  # Count: 1288
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -138,6 +138,7 @@ payload:
   - DOMAIN,bt.plc.mx
   - DOMAIN,bt.poletracker.org
   - DOMAIN,bt.ptlsp.com
+  - DOMAIN,bt.publicvm.com
   - DOMAIN,bt.pusacg.org
   - DOMAIN,bt.rer.lol
   - DOMAIN,bt.rghost.net
@@ -159,6 +160,7 @@ payload:
   - DOMAIN,bt2.archive.org
   - DOMAIN,bt2.careland.com.cn
   - DOMAIN,bt2.edwardk.info
+  - DOMAIN,bt4.t-ru.org
   - DOMAIN,btfile.sdo.com
   - DOMAIN,btn-prod.ghostchu-services.top
   - DOMAIN,btracker.top
@@ -556,6 +558,7 @@ payload:
   - DOMAIN,smtp.loki.tel
   - DOMAIN,smurfsoft.com
   - DOMAIN,socket.onvo.me
+  - DOMAIN,sound-park.world
   - DOMAIN,soundmovie.ru
   - DOMAIN,spacetradersapi-chatbox.herokuapp.com
   - DOMAIN,sparkle.ghostchu-services.top
@@ -1277,6 +1280,7 @@ payload:
   - DOMAIN,yggtracker.i2p.rocks
   - DOMAIN,yolo.liberbear.com
   - DOMAIN,yuki.bt.bontal.net
+  - DOMAIN,yuptracker-eu.gaijinent.com
   - DOMAIN,z.crazyhd.com
   - DOMAIN,z.mercax.com
   - DOMAIN,z.paranoid.agency
