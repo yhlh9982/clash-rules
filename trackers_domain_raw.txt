@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1290
+# Count: 1292
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -1007,6 +1007,7 @@ tracker.projectk.org
 tracker.prq.to
 tracker.ptchdbits.co
 tracker.pterclub.com
+tracker.ptrmc.net
 tracker.publicbt.com
 tracker.publictorrent.net
 tracker.publictracker.xyz
@@ -1042,6 +1043,7 @@ tracker.sloppyta.co
 tracker.soshifanclub.com
 tracker.srv00.com
 tracker.startwork.cv
+tracker.supertracker.net
 tracker.sushirave.net
 tracker.swateam.org.uk
 tracker.swifte.space

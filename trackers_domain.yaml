@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1290
+  # Count: 1292
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -1007,6 +1007,7 @@ payload:
   - DOMAIN,tracker.prq.to
   - DOMAIN,tracker.ptchdbits.co
   - DOMAIN,tracker.pterclub.com
+  - DOMAIN,tracker.ptrmc.net
   - DOMAIN,tracker.publicbt.com
   - DOMAIN,tracker.publictorrent.net
   - DOMAIN,tracker.publictracker.xyz
@@ -1042,6 +1043,7 @@ payload:
   - DOMAIN,tracker.soshifanclub.com
   - DOMAIN,tracker.srv00.com
   - DOMAIN,tracker.startwork.cv
+  - DOMAIN,tracker.supertracker.net
   - DOMAIN,tracker.sushirave.net
   - DOMAIN,tracker.swateam.org.uk
   - DOMAIN,tracker.swifte.space
