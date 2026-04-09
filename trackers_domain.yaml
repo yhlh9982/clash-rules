@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1292
+  # Count: 1293
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -1227,6 +1227,7 @@ payload:
   - DOMAIN,widemus.de
   - DOMAIN,wolf.parrot.run
   - DOMAIN,wsad.run.place
+  - DOMAIN,wtorrent.manalejandro.com
   - DOMAIN,www.2600.com
   - DOMAIN,www.all4nothin.net
   - DOMAIN,www.ansktracker.net
