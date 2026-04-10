@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1293
+# Count: 1294
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -1001,6 +1001,7 @@ tracker.playground.ru
 tracker.plx.im
 tracker.pmman.tech
 tracker.pomf.se
+tracker.port443.xyz
 tracker.pow7.com
 tracker.privateseedbox.xyz
 tracker.projectk.org
