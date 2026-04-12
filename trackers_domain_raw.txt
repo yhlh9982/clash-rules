@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1294
+# Count: 1295
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -1181,6 +1181,7 @@ trackers.run
 trackers.ydns.eu
 trackme.theom.nz
 trackr.appolon.dev
+trackthis.cyber.pz.it
 trakx.herokuapp.com
 trl-zhuqiy.dgj055.icu
 trun.tom.ru
