@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1296
+  # Count: 1299
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -70,6 +70,7 @@ payload:
   - DOMAIN,api.clasificadosrapidos.com
   - DOMAIN,api.ipv4online.uk
   - DOMAIN,app.icon256.com
+  - DOMAIN,archive.torrentonline.cc
   - DOMAIN,asiatorrent.ddns.net
   - DOMAIN,asiatorrent.giize.com
   - DOMAIN,asnet.pw
@@ -410,6 +411,7 @@ payload:
   - DOMAIN,nyaa.tracker.wf
   - DOMAIN,nyaaplus.i2p
   - DOMAIN,o-unkusrx.cloud.okteto.net
+  - DOMAIN,obey.torrentonline.cc
   - DOMAIN,odd-hd.fr
   - DOMAIN,oh.fuuuuuck.com
   - DOMAIN,on.springsunday.net
@@ -1227,6 +1229,7 @@ payload:
   - DOMAIN,wegkxfcivgx.ydns.eu
   - DOMAIN,wepzone.net
   - DOMAIN,wg.mortis.me
+  - DOMAIN,whybother.torrentonline.cc
   - DOMAIN,widemus.de
   - DOMAIN,wolf.parrot.run
   - DOMAIN,wsad.run.place
