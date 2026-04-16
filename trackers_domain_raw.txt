@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1299
+# Count: 1300
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -428,6 +428,7 @@ open.demonii.si
 open.demonoid.ch
 open.dstud.io
 open.free-tracker.ga
+open.ftorrent.com
 open.kickasstracker.com
 open.lolicon.eu
 open.miotracker.com

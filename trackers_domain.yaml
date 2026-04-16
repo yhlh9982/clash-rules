@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1299
+  # Count: 1300
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -428,6 +428,7 @@ payload:
   - DOMAIN,open.demonoid.ch
   - DOMAIN,open.dstud.io
   - DOMAIN,open.free-tracker.ga
+  - DOMAIN,open.ftorrent.com
   - DOMAIN,open.kickasstracker.com
   - DOMAIN,open.lolicon.eu
   - DOMAIN,open.miotracker.com
