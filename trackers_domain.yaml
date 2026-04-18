@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1300
+  # Count: 1301
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -635,6 +635,7 @@ payload:
   - DOMAIN,torrent-tracker.hama3.net
   - DOMAIN,torrent-tracker.ru
   - DOMAIN,torrent.arjlover.net
+  - DOMAIN,torrent.bowed.net
   - DOMAIN,torrent.fedoraproject.org
   - DOMAIN,torrent.gresille.org
   - DOMAIN,torrent.hificode.in

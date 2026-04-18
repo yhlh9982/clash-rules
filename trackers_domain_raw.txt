@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1300
+# Count: 1301
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -635,6 +635,7 @@ torrent-team.net
 torrent-tracker.hama3.net
 torrent-tracker.ru
 torrent.arjlover.net
+torrent.bowed.net
 torrent.fedoraproject.org
 torrent.gresille.org
 torrent.hificode.in
