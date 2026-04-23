@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1302
+  # Count: 1303
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -556,6 +556,7 @@ payload:
   - DOMAIN,shubt.net
   - DOMAIN,siambit.com
   - DOMAIN,siambit.org
+  - DOMAIN,siwserver.duckdns.org
   - DOMAIN,slicie.icon256.com
   - DOMAIN,smtp-relay.odysseylabel.com.au
   - DOMAIN,smtp.loki.tel
