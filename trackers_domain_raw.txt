@@ -1,5 +1,5 @@
 # Tracker Domains (raw)
-# Count: 1303
+# Count: 1304
 
 00.alarmasqueretaro.com
 00.mercax.com
@@ -1221,6 +1221,7 @@ valakas.rollo.dnsabr.com
 vibe.community
 vibe.sleepyinternetfun.xyz
 vito-tracker.duckdns.org
+vito-tracker.space
 vm3268418.24ssd.had.wf
 voxhost.fr
 vps-c1adea63.vps.ovh.net

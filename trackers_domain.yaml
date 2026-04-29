@@ -1,6 +1,6 @@
 payload:
   # Tracker Domains (Clash)
-  # Count: 1303
+  # Count: 1304
   - DOMAIN,00.alarmasqueretaro.com
   - DOMAIN,00.mercax.com
   - DOMAIN,00.xxtor.com
@@ -1221,6 +1221,7 @@ payload:
   - DOMAIN,vibe.community
   - DOMAIN,vibe.sleepyinternetfun.xyz
   - DOMAIN,vito-tracker.duckdns.org
+  - DOMAIN,vito-tracker.space
   - DOMAIN,vm3268418.24ssd.had.wf
   - DOMAIN,voxhost.fr
   - DOMAIN,vps-c1adea63.vps.ovh.net
