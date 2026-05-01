@@ -16,31 +16,17 @@ import sys
 # Tracker 原始列表
 URL = "https://raw.githubusercontent.com/adysec/tracker/main/trackers_all.txt"
 
-# 规则集名称
-RULESET_NAME = "trackers"
+# TXT 文件直接输出到项目根目录，方便在仓库中查看
+DOMAIN_TXT = Path("trackers_domain.txt")
+IP_TXT = Path("trackers_ip.txt")
 
-# 输出目录
-DIST_DIR = Path("dist")
-
-# TXT 输出目录
-TXT_GEOSITE_DIR = DIST_DIR / "txt" / "geosite"
-TXT_GEOIP_DIR = DIST_DIR / "txt" / "geoip"
-
-# MRS 输出目录
-MRS_GEOSITE_DIR = DIST_DIR / "mrs" / "geosite"
-MRS_GEOIP_DIR = DIST_DIR / "mrs" / "geoip"
-
-# TXT 输出文件
-DOMAIN_TXT = TXT_GEOSITE_DIR / f"{RULESET_NAME}.txt"
-IP_TXT = TXT_GEOIP_DIR / f"{RULESET_NAME}.txt"
-
-# MRS 输出文件
-DOMAIN_MRS = MRS_GEOSITE_DIR / f"{RULESET_NAME}.mrs"
-IP_MRS = MRS_GEOIP_DIR / f"{RULESET_NAME}.mrs"
+# MRS 文件只用于上传到 GitHub Releases
+MRS_DIR = Path("release")
+DOMAIN_MRS = MRS_DIR / "trackers_domain.mrs"
+IP_MRS = MRS_DIR / "trackers_ip.mrs"
 
 # mihomo 命令
-# 如果 mihomo 不在 PATH 中，可以用环境变量指定：
-# MIHOMO_BIN=/path/to/mihomo python3 build_trackers_ruleset.py
+# GitHub Actions 中会通过 MIHOMO_BIN 指定
 MIHOMO_BIN = os.environ.get("MIHOMO_BIN", "mihomo")
 
 
@@ -49,10 +35,7 @@ MIHOMO_BIN = os.environ.get("MIHOMO_BIN", "mihomo")
 # =========================
 
 def prepare_dirs():
-    TXT_GEOSITE_DIR.mkdir(parents=True, exist_ok=True)
-    TXT_GEOIP_DIR.mkdir(parents=True, exist_ok=True)
-    MRS_GEOSITE_DIR.mkdir(parents=True, exist_ok=True)
-    MRS_GEOIP_DIR.mkdir(parents=True, exist_ok=True)
+    MRS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # =========================
@@ -104,15 +87,6 @@ def normalize_domain(domain):
     if not domain:
         return None
 
-    # 域名中至少应包含一个点
-    if "." not in domain:
-        return None
-
-    # 过滤明显异常内容
-    if " " in domain:
-        return None
-
-    # 过滤通配符前缀，保持纯域名
     if domain.startswith("*."):
         domain = domain[2:]
 
@@ -122,12 +96,20 @@ def normalize_domain(domain):
     if not domain:
         return None
 
+    # 普通域名至少包含一个点
+    if "." not in domain:
+        return None
+
+    # 过滤明显异常内容
+    if " " in domain:
+        return None
+
     return domain
 
 
 def ip_to_cidr(ip):
     """
-    将单个 IP 转换为 Mihomo ipcidr rule-set 更适合的 CIDR 表示。
+    将单个 IP 转换成适合 Mihomo ipcidr 规则集的 CIDR 格式。
 
     IPv4:
       1.2.3.4 -> 1.2.3.4/32
@@ -206,21 +188,23 @@ def parse_trackers(lines):
 
 def save_plain_txt(path, items):
     """
-    保存纯文本规则集。
+    保存纯文本内容。
 
-    域名文件示例：
+    trackers_domain.txt 示例：
       tracker.example.com
       tracker.opentrackr.org
 
-    IP 文件示例：
+    trackers_ip.txt 示例：
       1.2.3.4/32
       2001:db8::1/128
 
     不写入：
-      payload:
       DOMAIN,
       IP-CIDR,
+      IP-CIDR6,
+      payload:
       rules:
+      YAML
       注释
       统计信息
     """
@@ -248,7 +232,7 @@ def check_mihomo():
     print("请先安装 mihomo，或者通过 MIHOMO_BIN 指定路径。")
     print("")
     print("示例：")
-    print("  MIHOMO_BIN=/usr/local/bin/mihomo python3 build_trackers_ruleset.py")
+    print("  MIHOMO_BIN=/usr/local/bin/mihomo python3 convert_trackers.py")
     print("")
     return False
 
@@ -306,7 +290,7 @@ def main():
     print(f"解析到域名数量：{len(domains)}")
     print(f"解析到 IP/CIDR 数量：{len(ip_cidrs)}")
 
-    # 1. 输出纯 TXT
+    # 1. 输出项目中可查看的纯 TXT
     save_plain_txt(DOMAIN_TXT, domains)
     save_plain_txt(IP_TXT, ip_cidrs)
 
@@ -314,16 +298,18 @@ def main():
     if not check_mihomo():
         sys.exit(1)
 
-    # 3. 生成 Mihomo 可用的 .mrs
+    # 3. 生成用于 GitHub Releases 的 .mrs 文件
     convert_to_mrs(DOMAIN_TXT, DOMAIN_MRS, "domain")
     convert_to_mrs(IP_TXT, IP_MRS, "ipcidr")
 
     print("")
     print("全部处理完成。")
     print("")
-    print("输出文件：")
+    print("项目中保留的 TXT：")
     print(f"  域名 TXT：{DOMAIN_TXT}")
     print(f"  IP TXT：  {IP_TXT}")
+    print("")
+    print("用于 GitHub Releases 的 MRS：")
     print(f"  域名 MRS：{DOMAIN_MRS}")
     print(f"  IP MRS：  {IP_MRS}")
 
