@@ -10,10 +10,10 @@
 
 ### 在线查看内容
  
-trackers_domain.yaml - tracker 域名地址
+trackers_domain.txt - tracker 域名地址
 https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain.txt
 
-trackers_ip.yaml - tracker IP地址
+trackers_ip.txt - tracker IP地址
 https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_ip.txt
 
 ### 使用方式
