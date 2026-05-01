@@ -8,16 +8,14 @@
 
 ## 规则文件地址及使用方式
 
-### 在线地址（URL）
+### 在线查看内容
  
 trackers_domain.yaml - tracker 域名地址
-https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain.yaml
+https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain.txt
 
 trackers_ip.yaml - tracker IP地址
-https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_ip.yaml
+https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_ip.txt
 
-trackers_domain_raw.txt 纯域名地址
-https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain_raw.txt
 ### 使用方式
 
 要想使用本项目的规则集，只需要在 Clash 配置文件中添加如下 `rule-providers` 和 `rules`。
@@ -28,25 +26,21 @@ https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain_ra
 rule-providers:
   trackers-domain:
     type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain.yaml"
+    behavior: domain
+    format: mrs
+    url: "https://github.com/yhlh9982/clash-rules/releases/download/tracker-rules/trackers_domain.mrs"
+    path: ./ruleset/trackers_domain.mrs
     interval: 86400
 
   trackers-ip:
     type: http
-    behavior: classical
-    url: "https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_ip.yaml"
+    behavior: ipcidr
+    format: mrs
+    url: "https://github.com/yhlh9982/clash-rules/releases/download/tracker-rules/trackers_ip.mrs"
+    path: ./ruleset/trackers_ip.mrs
     interval: 86400
 
-  Btfkbl:
-    type: http
-    behavior: domain
-    format: text
-    url: "https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain_raw.txt"
-    interval: 86400
 ```
-  fake-ip-filter:
-    - rule-set:Btfkbl
 
 rules:
   - RULE-SET,trackers-ip,直连,no-resolve
