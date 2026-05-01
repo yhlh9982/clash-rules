@@ -1,0 +1,90 @@
+name: Update Tracker Rules
+
+on:
+  schedule:
+    # 每天北京时间 12:00（UTC 04:00）
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Download mihomo
+        run: |
+          set -e
+
+          wget -O mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha.gz
+          gzip -d mihomo.gz
+          chmod +x mihomo
+          sudo mv mihomo /usr/local/bin/mihomo
+
+          mihomo -v
+
+      - name: Run tracker conversion
+        env:
+          MIHOMO_BIN: /usr/local/bin/mihomo
+        run: |
+          set -e
+          python convert_trackers.py
+
+      - name: Remove old Clash output files
+        run: |
+          rm -f trackers_domain_raw.txt
+          rm -f trackers_ip_raw.txt
+          rm -f trackers_domain.yaml
+          rm -f trackers_ip.yaml
+
+      - name: Commit TXT changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          git add trackers_domain.txt trackers_ip.txt
+
+          git add -u trackers_domain_raw.txt trackers_ip_raw.txt trackers_domain.yaml trackers_ip.yaml || true
+
+          if git diff --cached --quiet; then
+            echo "No TXT changes to commit."
+          else
+            git commit -m "chore: auto update tracker txt ($(date -u +'%Y-%m-%d'))"
+            git push
+          fi
+
+      - name: Upload MRS files to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: tracker-rules
+          name: Tracker Rules
+          body: |
+            Automatically generated tracker rule sets.
+
+            TXT files are kept in the repository for viewing.
+
+            MRS files are provided here for Mihomo rule-providers.
+
+            Files:
+            - trackers_domain.mrs
+            - trackers_ip.mrs
+          files: |
+            release/trackers_domain.mrs
+            release/trackers_ip.mrs
+          make_latest: true
+          overwrite_files: true
