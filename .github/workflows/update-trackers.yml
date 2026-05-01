@@ -30,8 +30,13 @@ jobs:
       - name: Download mihomo
         run: |
           set -e
-
-          wget -O mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/Prerelease-Alpha/mihomo-linux-amd64-alpha.gz
+          
+          # 动态获取 Mihomo 最新稳定版的 linux-amd64 下载链接
+          DOWNLOAD_URL=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep "browser_download_url.*mihomo-linux-amd64-v" | head -n 1 | cut -d '"' -f 4)
+          
+          echo "获取到的下载链接: $DOWNLOAD_URL"
+          
+          wget -O mihomo.gz "$DOWNLOAD_URL"
           gzip -d mihomo.gz
           chmod +x mihomo
           sudo mv mihomo /usr/local/bin/mihomo
