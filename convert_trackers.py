@@ -35,7 +35,7 @@ TEMP_DIR = Path("tmp_rules")
 LOYALSOLDIER_RULES = [
     {
         "name": "proxy",
-        "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
+        "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt",
         "behavior": "domain",
         "input_format": "yaml",
         "source_file": TEMP_DIR / "proxy.yaml",
@@ -43,7 +43,7 @@ LOYALSOLDIER_RULES = [
     },
     {
         "name": "direct",
-        "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
+        "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",
         "behavior": "domain",
         "input_format": "yaml",
         "source_file": TEMP_DIR / "direct.yaml",
@@ -51,7 +51,7 @@ LOYALSOLDIER_RULES = [
     },
     {
         "name": "cncidr",
-        "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
+        "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/cncidr.txt",
         "behavior": "ipcidr",
         "input_format": "yaml",
         "source_file": TEMP_DIR / "cncidr.yaml",
