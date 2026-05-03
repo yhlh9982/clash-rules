@@ -79,7 +79,7 @@ jobs:
           tag_name: tracker-rules
           name: Tracker Rules
           body: |
-            Automatically generated tracker rule sets.
+            Automatically generated rule sets.
 
             TXT files are kept in the repository for viewing.
 
@@ -88,8 +88,14 @@ jobs:
             Files:
             - trackers_domain.mrs
             - trackers_ip.mrs
+            - proxy.mrs
+            - direct.mrs
+            - cncidr.mrs
           files: |
             release/trackers_domain.mrs
             release/trackers_ip.mrs
+            release/proxy.mrs
+            release/direct.mrs
+            release/cncidr.mrs
           make_latest: true
           overwrite_files: true
