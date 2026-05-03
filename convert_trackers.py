@@ -14,16 +14,50 @@ import sys
 # =========================
 
 # Tracker 原始列表
-URL = "https://raw.githubusercontent.com/adysec/tracker/main/trackers_all.txt"
+TRACKER_URL = "https://raw.githubusercontent.com/adysec/tracker/main/trackers_all.txt"
 
-# TXT 文件直接输出到项目根目录，方便在仓库中查看
-DOMAIN_TXT = Path("trackers_domain.txt")
-IP_TXT = Path("trackers_ip.txt")
+# Tracker TXT 文件直接输出到项目根目录，方便在仓库中查看
+TRACKER_DOMAIN_TXT = Path("trackers_domain.txt")
+TRACKER_IP_TXT = Path("trackers_ip.txt")
 
 # MRS 文件只用于上传到 GitHub Releases
 MRS_DIR = Path("release")
-DOMAIN_MRS = MRS_DIR / "trackers_domain.mrs"
-IP_MRS = MRS_DIR / "trackers_ip.mrs"
+
+TRACKER_DOMAIN_MRS = MRS_DIR / "trackers_domain.mrs"
+TRACKER_IP_MRS = MRS_DIR / "trackers_ip.mrs"
+
+# 临时下载目录，不提交到仓库
+TEMP_DIR = Path("tmp_rules")
+
+# Loyalsoldier 规则源
+# 注意：
+# 这些文件虽然后缀是 .txt，但内容是 YAML payload 格式
+LOYALSOLDIER_RULES = [
+    {
+        "name": "proxy",
+        "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt",
+        "behavior": "domain",
+        "input_format": "yaml",
+        "source_file": TEMP_DIR / "proxy.yaml",
+        "mrs_file": MRS_DIR / "proxy.mrs",
+    },
+    {
+        "name": "direct",
+        "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt",
+        "behavior": "domain",
+        "input_format": "yaml",
+        "source_file": TEMP_DIR / "direct.yaml",
+        "mrs_file": MRS_DIR / "direct.mrs",
+    },
+    {
+        "name": "cncidr",
+        "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt",
+        "behavior": "ipcidr",
+        "input_format": "yaml",
+        "source_file": TEMP_DIR / "cncidr.yaml",
+        "mrs_file": MRS_DIR / "cncidr.mrs",
+    },
+]
 
 # mihomo 命令
 # GitHub Actions 中会通过 MIHOMO_BIN 指定
@@ -36,6 +70,39 @@ MIHOMO_BIN = os.environ.get("MIHOMO_BIN", "mihomo")
 
 def prepare_dirs():
     MRS_DIR.mkdir(parents=True, exist_ok=True)
+    TEMP_DIR.mkdir(parents=True, exist_ok=True)
+
+
+# =========================
+# 通用下载函数
+# =========================
+
+def download_text(url):
+    try:
+        print(f"正在下载：{url}")
+
+        response = requests.get(url, timeout=30)
+        response.raise_for_status()
+
+        return response.text
+
+    except Exception as e:
+        print(f"下载失败：{url}")
+        print(f"错误信息：{e}")
+        return None
+
+
+def download_file(url, output_path):
+    text = download_text(url)
+
+    if text is None:
+        return False
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    output_path.write_text(text, encoding="utf-8", newline="\n")
+
+    print(f"已下载到：{output_path}")
+    return True
 
 
 # =========================
@@ -43,30 +110,25 @@ def prepare_dirs():
 # =========================
 
 def download_trackers(url):
-    try:
-        print(f"正在下载 Tracker 列表：{url}")
+    text = download_text(url)
 
-        response = requests.get(url, timeout=20)
-        response.raise_for_status()
-
-        lines = set()
-
-        for raw_line in response.text.splitlines():
-            line = raw_line.strip()
-
-            if not line:
-                continue
-
-            if line.startswith("#"):
-                continue
-
-            lines.add(line)
-
-        return lines
-
-    except Exception as e:
-        print(f"下载失败：{e}")
+    if text is None:
         return set()
+
+    lines = set()
+
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+
+        if not line:
+            continue
+
+        if line.startswith("#"):
+            continue
+
+        lines.add(line)
+
+    return lines
 
 
 # =========================
@@ -241,20 +303,25 @@ def check_mihomo():
 # 生成 MRS
 # =========================
 
-def convert_to_mrs(input_txt, output_mrs, behavior):
+def convert_to_mrs(input_file, output_mrs, behavior, input_format):
     """
     使用 mihomo convert-ruleset 生成 .mrs。
 
     behavior:
-      domain  -> 域名规则集
-      ipcidr  -> IP CIDR 规则集
+      domain    -> 域名规则集
+      ipcidr    -> IP CIDR 规则集
+      classical -> 传统 Clash 规则集
+
+    input_format:
+      text -> 纯文本，一行一个规则
+      yaml -> payload YAML
     """
     cmd = [
         MIHOMO_BIN,
         "convert-ruleset",
         behavior,
-        "text",
-        str(input_txt),
+        input_format,
+        str(input_file),
         str(output_mrs),
     ]
 
@@ -271,13 +338,14 @@ def convert_to_mrs(input_txt, output_mrs, behavior):
 
 
 # =========================
-# 主流程
+# Tracker 处理
 # =========================
 
-def main():
-    prepare_dirs()
+def process_trackers():
+    print("")
+    print("========== 处理 Tracker 规则 ==========")
 
-    lines = download_trackers(URL)
+    lines = download_trackers(TRACKER_URL)
 
     if not lines:
         print("未获取到任何 Tracker 数据，终止执行。")
@@ -287,31 +355,90 @@ def main():
 
     domains, ip_cidrs = parse_trackers(lines)
 
-    print(f"解析到域名数量：{len(domains)}")
-    print(f"解析到 IP/CIDR 数量：{len(ip_cidrs)}")
+    print(f"解析到 Tracker 域名数量：{len(domains)}")
+    print(f"解析到 Tracker IP/CIDR 数量：{len(ip_cidrs)}")
 
     # 1. 输出项目中可查看的纯 TXT
-    save_plain_txt(DOMAIN_TXT, domains)
-    save_plain_txt(IP_TXT, ip_cidrs)
+    save_plain_txt(TRACKER_DOMAIN_TXT, domains)
+    save_plain_txt(TRACKER_IP_TXT, ip_cidrs)
 
-    # 2. 检查 mihomo
+    # 2. 生成用于 GitHub Releases 的 .mrs 文件
+    convert_to_mrs(
+        TRACKER_DOMAIN_TXT,
+        TRACKER_DOMAIN_MRS,
+        behavior="domain",
+        input_format="text",
+    )
+
+    convert_to_mrs(
+        TRACKER_IP_TXT,
+        TRACKER_IP_MRS,
+        behavior="ipcidr",
+        input_format="text",
+    )
+
+
+# =========================
+# Loyalsoldier 处理
+# =========================
+
+def process_loyalsoldier_rules():
+    print("")
+    print("========== 处理 Loyalsoldier 规则 ==========")
+
+    for rule in LOYALSOLDIER_RULES:
+        name = rule["name"]
+        url = rule["url"]
+        behavior = rule["behavior"]
+        input_format = rule["input_format"]
+        source_file = rule["source_file"]
+        mrs_file = rule["mrs_file"]
+
+        print("")
+        print(f"正在处理规则：{name}")
+
+        if not download_file(url, source_file):
+            print(f"规则下载失败，终止：{name}")
+            sys.exit(1)
+
+        convert_to_mrs(
+            source_file,
+            mrs_file,
+            behavior=behavior,
+            input_format=input_format,
+        )
+
+
+# =========================
+# 主流程
+# =========================
+
+def main():
+    prepare_dirs()
+
+    # 检查 mihomo
     if not check_mihomo():
         sys.exit(1)
 
-    # 3. 生成用于 GitHub Releases 的 .mrs 文件
-    convert_to_mrs(DOMAIN_TXT, DOMAIN_MRS, "domain")
-    convert_to_mrs(IP_TXT, IP_MRS, "ipcidr")
+    # 1. 处理 Tracker
+    process_trackers()
+
+    # 2. 处理 Loyalsoldier 的 proxy/direct/cncidr
+    process_loyalsoldier_rules()
 
     print("")
     print("全部处理完成。")
     print("")
     print("项目中保留的 TXT：")
-    print(f"  域名 TXT：{DOMAIN_TXT}")
-    print(f"  IP TXT：  {IP_TXT}")
+    print(f"  Tracker 域名 TXT：{TRACKER_DOMAIN_TXT}")
+    print(f"  Tracker IP TXT：  {TRACKER_IP_TXT}")
     print("")
     print("用于 GitHub Releases 的 MRS：")
-    print(f"  域名 MRS：{DOMAIN_MRS}")
-    print(f"  IP MRS：  {IP_MRS}")
+    print(f"  Tracker 域名 MRS：{TRACKER_DOMAIN_MRS}")
+    print(f"  Tracker IP MRS：  {TRACKER_IP_MRS}")
+    print(f"  proxy MRS：       {MRS_DIR / 'proxy.mrs'}")
+    print(f"  direct MRS：      {MRS_DIR / 'direct.mrs'}")
+    print(f"  cncidr MRS：      {MRS_DIR / 'cncidr.mrs'}")
 
 
 if __name__ == "__main__":
