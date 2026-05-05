@@ -591,6 +591,7 @@ t.pldm.ml
 t.publictracker.xyz
 t.quic.ws
 t.ubits.club
+t.warwarez.ru
 t.zerg.pw
 t1.aag.moe
 t1.chfs.ch
@@ -923,6 +924,7 @@ tracker.leechers-paradise.org
 tracker.leechshield.link
 tracker.leena.network
 tracker.lelux.fi
+tracker.lenition.de
 tracker.letpo.com
 tracker.lilithraws.cf
 tracker.lilithraws.org
@@ -1028,6 +1030,7 @@ tracker.rescuecrew7.com
 tracker.rev.pm
 tracker.riverarmy.xyz
 tracker.sakurato.art
+tracker.samcze.pl
 tracker.sbsub.com
 tracker.servequake.com
 tracker.sharebro.in
