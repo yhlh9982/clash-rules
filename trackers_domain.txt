@@ -1077,6 +1077,7 @@ tracker.torrent.to
 tracker.torrentbay.to
 tracker.torrentbd.net
 tracker.torrentbytes.net
+tracker.torrentclaw.com
 tracker.torrentino.com
 tracker.torrentleech.org
 tracker.torrentsnows.com
