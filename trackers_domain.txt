@@ -182,6 +182,7 @@ carapax.net
 carbon-bonsai-621.appspot.com
 carr.codes
 cdn-1.gamecoast.org
+cerf.cs.umd.edu
 cernet-tracker.appspot.com
 ch3oh.ru
 chdbits.xyz
