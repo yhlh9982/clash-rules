@@ -1206,6 +1206,7 @@ u6.trakx.crim.ist
 uabits.today
 uatracker.net
 udp-tracker.shittyurl.org
+udp.trackarr.org
 udp.tracker.projectk.org
 udp.yarr.pt
 udp1.torrust-tracker-demo.com
