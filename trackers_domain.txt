@@ -57,6 +57,7 @@ alltorrents.net
 alpha.torrenttracker.nl
 amigacity.xyz
 anidex.moe
+anime-tracker.aruku.kro.kr
 anisource.spb.ru
 anna.bt.bontal.net
 announce.partis.si
@@ -739,6 +740,7 @@ tracker.anonwebz.xyz
 tracker.arcbox.cc
 tracker.army
 tracker.artixlinux.org
+tracker.aruku.ovh
 tracker.auctor.tv
 tracker.babico.name.tr
 tracker.baka-sub.cf
