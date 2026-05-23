@@ -9,9 +9,6 @@ on:
 permissions:
   contents: write
 
-  # 强制 JavaScript Action 使用 Node.js 24，避免 Node 20 弃用警告
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
