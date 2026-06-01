@@ -4,6 +4,7 @@
 004430.xyz
 0123456789nonexistent.com
 0205.uptm.ch
+021912.xyz
 0d.kebhana.mx
 0x7c.space
 1.tracker.eu.org
@@ -78,6 +79,7 @@ atrack.pow7.com
 auratorrent.pl
 axell24.ru
 baibako.tv
+banananetwork.qzz.io
 bananas.space
 bandito.byterunner.io
 bclearning.top
@@ -455,6 +457,7 @@ opentracker.io
 opentracker.xyz
 opentrackr.org
 openwrt.lingyurouqing.xyz
+orgtgju.org
 oscar.reyesleon.xyz
 ourbits.club
 p2p.0g.cx
