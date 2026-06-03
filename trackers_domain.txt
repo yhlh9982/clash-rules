@@ -62,6 +62,7 @@ anime-tracker.aruku.kro.kr
 anisource.spb.ru
 anna.bt.bontal.net
 announce.partis.si
+announce.sktorrent.eu
 announce.torrentsmd.com
 anzix.net
 api.alarmasqueretaro.com
