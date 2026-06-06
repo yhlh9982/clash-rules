@@ -823,6 +823,7 @@ tracker.dmhy.org00
 tracker.dmhy.pw
 tracker.dnlab.net
 tracker.doko.moe
+tracker.dorcus.digital
 tracker.draatman.uk
 tracker.ds.is
 tracker.ducks.party
@@ -1005,6 +1006,7 @@ tracker.parrotlinux.org
 tracker.parrotsec.org
 tracker.pcfreetime.com
 tracker.peckservers.com
+tracker.peerfect.org
 tracker.phoenix.lol
 tracker.picotorrent.one
 tracker.piggo.me
