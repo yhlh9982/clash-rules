@@ -1000,6 +1000,7 @@ tracker.openbtba.com
 tracker.opendev.cloud
 tracker.opentorrent.top
 tracker.opentracker.se
+tracker.opentrackr.com
 tracker.opentrackr.org
 tracker.openwebtorrent.com
 tracker.openzim.org
@@ -1046,6 +1047,7 @@ tracker.riverarmy.xyz
 tracker.sakurato.art
 tracker.samcze.pl
 tracker.sbsub.com
+tracker.segso.net
 tracker.servequake.com
 tracker.sharebro.in
 tracker.sheesh.rip
