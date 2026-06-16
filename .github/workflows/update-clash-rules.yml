@@ -1,8 +1,7 @@
-name: Update clash rules
+name: Update clash rules Rules
 
 on:
   schedule:
-    # 每天北京时间 12:00（UTC 04:00）
     - cron: '0 4 * * *'
   workflow_dispatch:
 
@@ -30,16 +29,12 @@ jobs:
       - name: Download mihomo
         run: |
           set -e
-
           DOWNLOAD_URL=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep "browser_download_url.*mihomo-linux-amd64-v" | head -n 1 | cut -d '"' -f 4)
-
           echo "获取到的下载链接: $DOWNLOAD_URL"
-
           wget -O mihomo.gz "$DOWNLOAD_URL"
           gzip -d mihomo.gz
           chmod +x mihomo
           sudo mv mihomo /usr/local/bin/mihomo
-
           mihomo -v
 
       - name: Collect rules
@@ -56,13 +51,13 @@ jobs:
 
       - name: Remove old root output files
         run: |
+          rm -f convert_trackers.py
           rm -f trackers_domain.txt
           rm -f trackers_ip.txt
           rm -f trackers_domain_raw.txt
           rm -f trackers_ip_raw.txt
           rm -f trackers_domain.yaml
           rm -f trackers_ip.yaml
-          rm -f convert_trackers.py
 
       - name: Commit text changes
         run: |
@@ -70,7 +65,6 @@ jobs:
           git config --local user.name "GitHub Action"
 
           git add data product scripts .github/workflows/update-trackers.yml README.md
-
           git add -u
 
           if git diff --cached --quiet; then
@@ -95,6 +89,7 @@ jobs:
             Files:
             - Jcdn.mrs
             - Jweb.mrs
+            - cnlite.mrs
             - trackers_domain.mrs
             - trackers_ip.mrs
             - proxy.mrs
@@ -104,6 +99,7 @@ jobs:
           files: |
             release/Jcdn.mrs
             release/Jweb.mrs
+            release/cnlite.mrs
             release/trackers_domain.mrs
             release/trackers_ip.mrs
             release/proxy.mrs
