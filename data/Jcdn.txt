@@ -28,7 +28,7 @@
 - +.waimaosass.icu
 - +.yunjnet.com
 - +.poke-mon.xyz
-    # tcp.bet
+
 - +.alilago.org
 - +.bsxis.org
 - +.akacaio.org
