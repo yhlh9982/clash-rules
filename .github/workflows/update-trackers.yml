@@ -30,12 +30,11 @@ jobs:
       - name: Download mihomo
         run: |
           set -e
-          
-          # 动态获取 Mihomo 最新稳定版的 linux-amd64 下载链接
+
           DOWNLOAD_URL=$(curl -s https://api.github.com/repos/MetaCubeX/mihomo/releases/latest | grep "browser_download_url.*mihomo-linux-amd64-v" | head -n 1 | cut -d '"' -f 4)
-          
+
           echo "获取到的下载链接: $DOWNLOAD_URL"
-          
+
           wget -O mihomo.gz "$DOWNLOAD_URL"
           gzip -d mihomo.gz
           chmod +x mihomo
@@ -43,33 +42,41 @@ jobs:
 
           mihomo -v
 
-      - name: Run tracker conversion
+      - name: Collect rules
+        run: |
+          set -e
+          python scripts/collect_rules.py
+
+      - name: Build MRS
         env:
           MIHOMO_BIN: /usr/local/bin/mihomo
         run: |
           set -e
-          python convert_trackers.py
+          python scripts/build_mrs.py
 
-      - name: Remove old Clash output files
+      - name: Remove old root output files
         run: |
+          rm -f trackers_domain.txt
+          rm -f trackers_ip.txt
           rm -f trackers_domain_raw.txt
           rm -f trackers_ip_raw.txt
           rm -f trackers_domain.yaml
           rm -f trackers_ip.yaml
+          rm -f convert_trackers.py
 
-      - name: Commit TXT changes
+      - name: Commit text changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          git add trackers_domain.txt trackers_ip.txt
+          git add data product scripts .github/workflows/update-trackers.yml README.md
 
-          git add -u trackers_domain_raw.txt trackers_ip_raw.txt trackers_domain.yaml trackers_ip.yaml || true
+          git add -u
 
           if git diff --cached --quiet; then
-            echo "No TXT changes to commit."
+            echo "No text changes to commit."
           else
-            git commit -m "chore: auto update tracker txt ($(date -u +'%Y-%m-%d'))"
+            git commit -m "chore: auto update rules ($(date -u +'%Y-%m-%d'))"
             git push
           fi
 
@@ -81,21 +88,27 @@ jobs:
           body: |
             Automatically generated rule sets.
 
-            TXT files are kept in the repository for viewing.
+            TXT/YAML files are kept in the repository for viewing.
 
             MRS files are provided here for Mihomo rule-providers.
 
             Files:
+            - Jcdn.mrs
+            - Jweb.mrs
             - trackers_domain.mrs
             - trackers_ip.mrs
             - proxy.mrs
             - direct.mrs
+            - reject.mrs
             - cncidr.mrs
           files: |
+            release/Jcdn.mrs
+            release/Jweb.mrs
             release/trackers_domain.mrs
             release/trackers_ip.mrs
             release/proxy.mrs
             release/direct.mrs
+            release/reject.mrs
             release/cncidr.mrs
           make_latest: true
           overwrite_files: true
