@@ -2,16 +2,11 @@ import ipaddress
 import re
 import shutil
 import sys
-import tarfile
 from pathlib import Path
 from urllib.parse import urlparse
 
 import requests
 
-
-# =========================
-# 路径配置
-# =========================
 
 DATA_DIR = Path("data")
 SOURCE_DIR = DATA_DIR / "source"
@@ -64,21 +59,18 @@ LOYALSOLDIER_RULES = [
 
 CNLITE_CATEGORY_FILE = DATA_DIR / "cnlite_geosite.txt"
 CNLITE_PRODUCT_FILE = PRODUCT_DIR / "cnlite.txt"
+CNLITE_SOURCE_DIR = SOURCE_DIR / "meta_geosite"
 
-DOMAIN_LIST_ARCHIVE_URL = "https://github.com/v2fly/domain-list-community/archive/refs/heads/master.tar.gz"
-DOMAIN_LIST_ARCHIVE_FILE = SOURCE_DIR / "domain-list-community.tar.gz"
-DOMAIN_LIST_EXTRACT_DIR = SOURCE_DIR / "domain-list-community"
-DOMAIN_LIST_DATA_DIR = DOMAIN_LIST_EXTRACT_DIR / "data"
+META_RULES_GEOSITE_BASE_URL = (
+    "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite"
+)
 
-
-# =========================
-# 基础工具
-# =========================
 
 def prepare_dirs():
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     SOURCE_DIR.mkdir(parents=True, exist_ok=True)
     PRODUCT_DIR.mkdir(parents=True, exist_ok=True)
+    CNLITE_SOURCE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def download_text(url):
@@ -91,26 +83,6 @@ def download_text(url):
         print(f"下载失败：{url}")
         print(f"错误信息：{error}")
         return None
-
-
-def download_binary(url, output_path):
-    try:
-        print(f"正在下载压缩包：{url}")
-        response = requests.get(url, timeout=120, stream=True)
-        response.raise_for_status()
-
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, "wb") as file:
-            for chunk in response.iter_content(chunk_size=8192):
-                if chunk:
-                    file.write(chunk)
-
-        print(f"已保存到：{output_path}")
-        return True
-    except Exception as error:
-        print(f"下载失败：{url}")
-        print(f"错误信息：{error}")
-        return False
 
 
 def download_file(url, output_path):
@@ -147,10 +119,6 @@ def save_plain_txt(path, items):
     print(f"已生成：{path}，共 {len(items)} 条")
 
 
-# =========================
-# 自定义规则
-# =========================
-
 def process_custom_rules():
     print("")
     print("========== 处理自定义规则 ==========")
@@ -170,10 +138,6 @@ def process_custom_rules():
         lines = sorted(set(read_clean_lines(source_file)))
         save_plain_txt(product_file, lines)
 
-
-# =========================
-# Tracker 处理
-# =========================
 
 def is_ip(value):
     try:
@@ -274,10 +238,6 @@ def process_trackers():
     save_plain_txt(TRACKER_IP_PRODUCT, ip_cidrs)
 
 
-# =========================
-# Loyalsoldier 处理
-# =========================
-
 def process_loyalsoldier_rules():
     print("")
     print("========== 处理 Loyalsoldier 规则 ==========")
@@ -300,139 +260,46 @@ def process_loyalsoldier_rules():
         print(f"已输出到：{product_file}")
 
 
-# =========================
-# Geosite 聚合
-# =========================
-
-def prepare_domain_list_source():
-    if DOMAIN_LIST_EXTRACT_DIR.exists():
-        shutil.rmtree(DOMAIN_LIST_EXTRACT_DIR)
-
-    if not download_binary(DOMAIN_LIST_ARCHIVE_URL, DOMAIN_LIST_ARCHIVE_FILE):
-        sys.exit(1)
-
-    with tarfile.open(DOMAIN_LIST_ARCHIVE_FILE, "r:gz") as archive:
-        archive.extractall(path=SOURCE_DIR)
-
-    extracted_root = SOURCE_DIR / "domain-list-community-master"
-    if not extracted_root.exists():
-        print("解压后的 domain-list-community 目录不存在。")
-        sys.exit(1)
-
-    extracted_root.rename(DOMAIN_LIST_EXTRACT_DIR)
-
-    if not DOMAIN_LIST_DATA_DIR.exists():
-        print(f"未找到 geosite 数据目录：{DOMAIN_LIST_DATA_DIR}")
-        sys.exit(1)
-
-    print(f"geosite 数据已准备完成：{DOMAIN_LIST_DATA_DIR}")
-
-
-def normalize_domain_rule(value):
-    domain = value.strip().lower().strip()
-    if not domain:
+def normalize_geosite_line(line):
+    value = line.strip()
+    if not value:
         return None
-    if domain.startswith("."):
-        domain = domain[1:]
-    if domain.startswith("*."):
-        domain = domain[2:]
-    if not domain or "." not in domain or " " in domain:
+
+    if value.startswith("full:"):
+        domain = value[5:].strip().lower()
+        if not domain or "." not in domain or " " in domain:
+            return None
+        return domain
+
+    if value.startswith("domain:"):
+        domain = value[7:].strip().lower().strip(".")
+        if not domain or "." not in domain or " " in domain:
+            return None
+        return f"+.{domain}"
+
+    if ":" in value:
         return None
-    return f"+.{domain}"
 
-
-def normalize_full_rule(value):
-    domain = value.strip().lower().strip()
-    if not domain:
+    value = value.lower().strip()
+    if not value or "." not in value or " " in value:
         return None
-    if domain.startswith("."):
-        domain = domain[1:]
-    if not domain or "." not in domain or " " in domain:
-        return None
-    return domain
 
+    if value.startswith("+."):
+        return value
 
-def parse_geosite_entry(raw_line):
-    line = raw_line.split("#", 1)[0].strip()
-    if not line:
-        return None, None
+    if value.startswith("."):
+        return f"+{value}"
 
-    if " @" in line:
-        line = line.split(" @", 1)[0].strip()
-
-    if ":" not in line:
-        return "domain", line
-
-    entry_type, entry_value = line.split(":", 1)
-    return entry_type.strip(), entry_value.strip()
-
-
-def collect_geosite_category(category, seen_categories):
-    if category in seen_categories:
-        return set()
-
-    seen_categories.add(category)
-
-    category_file = DOMAIN_LIST_DATA_DIR / category
-    if not category_file.exists():
-        print(f"未找到 geosite 类目文件：{category}")
-        sys.exit(1)
-
-    results = set()
-
-    with open(category_file, "r", encoding="utf-8") as file:
-        for raw_line in file:
-            entry_type, entry_value = parse_geosite_entry(raw_line)
-            if not entry_type or not entry_value:
-                continue
-
-            if entry_type == "include":
-                results.update(collect_geosite_category(entry_value, seen_categories))
-                continue
-
-            if entry_type == "domain":
-                rule = normalize_domain_rule(entry_value)
-                if rule:
-                    results.add(rule)
-                continue
-
-            if entry_type == "full":
-                rule = normalize_full_rule(entry_value)
-                if rule:
-                    results.add(rule)
-                continue
-
-            if entry_type == "regexp":
-                continue
-
-            if entry_type == "keyword":
-                continue
-
-            if entry_type == "attr":
-                continue
-
-            if entry_type == "domain-regexp":
-                continue
-
-            if entry_type == "full-regexp":
-                continue
-
-            rule = normalize_domain_rule(entry_value)
-            if rule:
-                results.add(rule)
-
-    return results
+    return f"+.{value}"
 
 
 def process_cnlite():
     print("")
-    print("========== 处理 cnlite geosite 聚合 ==========")
+    print("========== 处理 cnlite 聚合规则 ==========")
 
     if not CNLITE_CATEGORY_FILE.exists():
         print(f"缺少类目文件：{CNLITE_CATEGORY_FILE}")
         sys.exit(1)
-
-    prepare_domain_list_source()
 
     categories = read_clean_lines(CNLITE_CATEGORY_FILE)
     if not categories:
@@ -440,17 +307,25 @@ def process_cnlite():
         sys.exit(1)
 
     merged_rules = set()
+
     for category in categories:
-        print(f"提取 geosite 类目：{category}")
-        merged_rules.update(collect_geosite_category(category, set()))
+        url = f"{META_RULES_GEOSITE_BASE_URL}/{category}.list"
+        source_file = CNLITE_SOURCE_DIR / f"{category}.list"
+
+        print(f"下载 geosite 类目：{category}")
+
+        if not download_file(url, source_file):
+            print(f"下载 geosite 类目失败：{category}")
+            sys.exit(1)
+
+        for line in read_clean_lines(source_file):
+            normalized = normalize_geosite_line(line)
+            if normalized:
+                merged_rules.add(normalized)
 
     sorted_rules = sorted(merged_rules)
     save_plain_txt(CNLITE_PRODUCT_FILE, sorted_rules)
 
-
-# =========================
-# 主流程
-# =========================
 
 def main():
     prepare_dirs()
