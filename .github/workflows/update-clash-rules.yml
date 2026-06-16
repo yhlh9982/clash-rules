@@ -1,4 +1,4 @@
-name: Update Tracker Rules
+name: Update clash rules
 
 on:
   schedule:
