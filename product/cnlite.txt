@@ -1955,9 +1955,11 @@
 +.ivwi3.cn
 +.iwanad.baidu.com
 +.ixgvideo.com
++.ixiaochuan.cn
 +.ixigua.com
 +.ixiguapi.com
 +.ixiguavideo.com
++.izuiyou.com
 +.jcloud-cache.com
 +.jcloud-cache.net
 +.jcloud-cdn.com
@@ -2360,6 +2362,7 @@
 +.mszdld.cn
 +.mszdld.com
 +.mszdld.net
++.mting.info
 +.mtrace.qq.com
 +.multilingual-volc.com
 +.muscdn.com
@@ -3530,6 +3533,7 @@
 +.xiangrikuisite.com
 +.xianjiqun.com
 +.xiaoaiassist.com
++.xiaochuankeji.cn
 +.xiaodutv.com
 +.xiaoluyouxuan.com
 +.xiaoluzhidian.com
