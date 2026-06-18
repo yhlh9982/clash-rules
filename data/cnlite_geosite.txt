@@ -15,7 +15,7 @@ alibaba
 tencent
 bytedance
 category-number-verification-cn
-category-httpdns-cn
 category-social-media-cn
 category-bank-cn
 category-media-cn
+category-netdisk-cn
