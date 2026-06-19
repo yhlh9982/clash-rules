@@ -34,4 +34,6 @@
 - +.akacaio.org
 - +.allmzk.org
 - +.aisafushi.org
+
+- +.mojcn.com
 - +.aileoneed.org
