@@ -1,6 +1,8 @@
 
 - +.bjnet2.com
 
+- +.mojcn.com
+
 - +.yh82l3dsytxzf8.com
 
 - +.shcdn.xyz
@@ -34,6 +36,4 @@
 - +.akacaio.org
 - +.allmzk.org
 - +.aisafushi.org
-
-- +.mojcn.com
 - +.aileoneed.org
