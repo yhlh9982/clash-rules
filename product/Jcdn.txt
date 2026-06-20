@@ -7,10 +7,13 @@
 - +.bestcf.top
 - +.bjnet2.com
 - +.bsxis.org
+- +.cnmjcn.cyou
+- +.cnmjin.net
 - +.idsduf.com
 - +.jueduibupao.top
 - +.liangxin1.xyz
 - +.luoluodemeng.cn
+- +.mojcn.com
 - +.poke-mon.xyz
 - +.shanhai.cfd
 - +.shanhai.click
