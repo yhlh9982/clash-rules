@@ -98,6 +98,7 @@
 +.36krcdn.com
 +.36krcnd.com
 +.3conline.com
++.3elife.net
 +.3ili6.cn
 +.56.com
 +.56che.com
@@ -267,10 +268,12 @@
 +.alibabacloud.com.sg
 +.alibabacloud.com.tw
 +.alibabacorp.com
++.alibabadesign.com
 +.alibabadns.com
 +.alibabadoctor.com
 +.alibabafuturehotel.com
 +.alibabagroup.com
++.alibabapictures.com
 +.alibabaplanet.com
 +.alibabaued.com
 +.alibabausercontent.com
@@ -285,10 +288,12 @@
 +.aliexpress.ru
 +.alifanyi.com
 +.aligames.com
++.aligenie.com
 +.aligfwaf.com
 +.alihealth.cn
 +.alihealth.com.cn
 +.alihealth.hk
++.alihive.com
 +.aliimg.com
 +.alikmd.com
 +.alikunlun.com
@@ -570,9 +575,11 @@
 +.binglianhuajianzhan.com
 +.bisheng.cn
 +.bishengcompiler.cn
++.bjnews.com.cn
 +.bkapigw.com
 +.bkapps.com
 +.bkclouds.cc
++.bkeconomy.com
 +.bktencent.com
 +.blackdragon.com
 +.blmpb.com
@@ -582,6 +589,7 @@
 +.bpltm.com
 +.brawlstars.cn
 +.bsb.com.cn
++.btime.com
 +.btrace.qq.com
 +.buf35.cn
 +.bugly.qq.com
@@ -868,6 +876,7 @@
 +.cdnv1.cn
 +.cdnv2.cn
 +.cdnv3.cn
++.ce.cn
 +.cebbank.com
 +.celeron.com
 +.celeron.net
@@ -1014,10 +1023,12 @@
 +.cntv.cn
 +.cntv.com.cn
 +.cntvwb.cn
++.cnwest.com
 +.cnzz.com
 +.coding.me
 +.coding.net
 +.codm.com
++.combofin.com
 +.comm-verse.com
 +.computeinit.com
 +.comsenz.com
@@ -1098,6 +1109,7 @@
 +.data.mistat.intl.xiaomi.com
 +.data.mistat.rus.xiaomi.com
 +.data.mistat.xiaomi.com
++.dayoo.com
 +.dayu.com
 +.dbank.com
 +.dbankcdn.cn
@@ -1208,6 +1220,7 @@
 +.druid.vip
 +.dt.dbankcloud.ru
 +.dualstack-logs.amap.com
++.duanqu.com
 +.duapp.com
 +.duapp.net
 +.duapps.com
@@ -1223,10 +1236,12 @@
 +.duxiaoman-int.com
 +.duxiaoman.com
 +.duxiaomanfintech.com
++.duxiaomanfund.com
 +.duxiaomantech.com
 +.dwz.cn
 +.dxm-cdn.com
 +.dxm-int.com
++.dxmbaoxian.com
 +.dxmjinr.com
 +.dxmlcf.com
 +.dxmlcfintech.com
@@ -1287,6 +1302,7 @@
 +.eu-west-1.myhuaweicloud.com
 +.eu-west-101.myhuaweicloud.com
 +.eu-west-201.myhuaweicloud.com
++.evolife.cn
 +.exascale-tech.com
 +.exmailgz.com
 +.exploreintel.com
@@ -1355,6 +1371,7 @@
 +.fenxi.com
 +.ffbuddy.com
 +.filez.com
++.fjsen.com
 +.fliggy.com
 +.fliggy.hk
 +.focus-img.cn
@@ -1429,6 +1446,7 @@
 +.getfeishu.com
 +.getsays.cn
 +.getsays.com
++.gfan.com
 +.ggoplay.com
 +.ggowan.com
 +.gia.jd.com
@@ -1612,6 +1630,7 @@
 +.huoshanzhibo.cn
 +.huoshanzhibo.com
 +.huoshanzhibo.net
++.hupan.com
 +.hupu.com
 +.hupucdn.com
 +.huxiu.com
@@ -2070,6 +2089,7 @@
 +.jingxi.com
 +.jinritemai.com
 +.jiqizhixin.com
++.jiyoujia.com
 +.jkcsjd.com
 +.jokecommunity.cn
 +.jokecommunity.com
@@ -2328,6 +2348,7 @@
 +.miaibox.com
 +.miaostreet.com
 +.miaowu.baidu.com
++.miaoya.cn
 +.midasbuy.com
 +.mieco.net
 +.miercn.com
@@ -2449,6 +2470,8 @@
 +.neweekly.com.cn
 +.news.cn
 +.newsimg.cn
++.newssc.org
++.newstjk.com
 +.newupbank.com
 +.nextgenerationcenter.com
 +.nextstudios.com
@@ -2535,6 +2558,7 @@
 +.onebank.com.cn
 +.onexmail.com
 +.oortgslb.com
++.open-uc.cn
 +.openamt.com
 +.openapp.run
 +.openbcs.com
@@ -2744,6 +2768,7 @@
 +.qhres2.com
 +.qhstatic.com
 +.qhupdate.com
++.qianlong.com
 +.qianxun.com
 +.qianzhan.com
 +.qidian.com
@@ -2806,6 +2831,7 @@
 +.realcybertron.com
 +.reconinstruments.com
 +.reconjet.com
++.rednet.cn
 +.reke.at.sohu.com
 +.renderingtoolkit.org
 +.report.qqweb.qq.com
@@ -2883,6 +2909,7 @@
 +.sgyouxi.com
 +.shangyexinzhi.com
 +.shanhaitujian.com
++.shejijia.com
 +.shenjing.com
 +.shidianguji.com
 +.shifen.com
@@ -2896,6 +2923,7 @@
 +.shuqiapi.com
 +.shuqiread.com
 +.shuqireader.com
++.shuqistat.com
 +.shyhhema.com
 +.sigopt.com
 +.silicon-mobility.com
@@ -2982,6 +3010,7 @@
 +.supercellcommunity.cn
 +.supercellsupport.cn
 +.supet.com
++.sxtvs.com
 +.syh.zybang.com
 +.syxlgame.com
 +.szhk.com
@@ -3298,8 +3327,10 @@
 +.txyscdn.net
 +.tzygd.cn
 +.ubmcvideo.baidustatic.com
++.uc-engine.cn
 +.uc.cn
 +.uc123.com
++.ucfly.com
 +.ucweb.com
 +.uczzd.cn
 +.ugdtimg.com
@@ -3606,6 +3637,8 @@
 +.xinhuaxmt.com
 +.xinlingshou.cn
 +.xinmeng.info
++.xinmin.cn
++.xinminweekly.com.cn
 +.xinyan.cn
 +.xitu.io
 +.xjietiao.com
@@ -3658,6 +3691,7 @@
 +.yoma.cn
 +.yoojia.com
 +.youdao.com
++.youdaoads.com
 +.youhua.com
 +.youku.com
 +.youku.tv
@@ -3739,6 +3773,7 @@
 +.zjcdn.com
 +.zjfcdn.com
 +.zjgslb.com
++.zjol.com.cn
 +.zjstv.com
 +.zjytxd.cn
 +.zjytxp.cn

@@ -9,6 +9,7 @@
 - +.bsxis.org
 - +.cnmjcn.cyou
 - +.cnmjin.net
+- +.ekan8.com
 - +.idsduf.com
 - +.jueduibupao.top
 - +.liangxin1.xyz
@@ -31,3 +32,4 @@
 - +.yt998.cn
 - +.ytong8686.com
 - +.yunjnet.com
+- api.dzzi.ai
