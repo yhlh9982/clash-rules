@@ -786,6 +786,7 @@ tracker.bz
 tracker.calculate.ru
 tracker.cangku.moe
 tracker.carpt.net
+tracker.cbase.cc
 tracker.ccc.de
 tracker.ccp.ovh
 tracker.chaoz.li
