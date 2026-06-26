@@ -18,4 +18,3 @@ category-number-verification-cn
 category-social-media-cn
 category-bank-cn
 category-media-cn
-category-netdisk-cn
