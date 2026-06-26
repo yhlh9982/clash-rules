@@ -137,6 +137,7 @@
 +.aaid.umeng.com
 +.abchina.com
 +.abhouses.com
++.account-cn.alibabacloud.com
 +.acctdns.com
 +.acctdns.net
 +.acg.tv
@@ -404,6 +405,7 @@
 +.ap-singapore.tencentcos.cn
 +.ap-singapore.tencentcos.com
 +.ap-singapore.tencentcos.com.cn
++.ap-southeast-1.aliyuncs.com
 +.ap-southeast-1.myhuaweicloud.com
 +.ap-southeast-2.myhuaweicloud.com
 +.ap-southeast-201.myhuaweicloud.com
@@ -421,6 +423,7 @@
 +.apdcdn.com
 +.apdcdn.net
 +.api-building.fun
++.api.alibabacloud.com
 +.apigwtencent.com
 +.apollo.auto
 +.appjiagu.com
@@ -1008,6 +1011,9 @@
 +.cm.baidu.com
 +.cmbc.com.cn
 +.cmpassport.com
++.cn-hangzhou.aliyuncs.com
++.cn-shanghai.aliyuncs.com
++.cn.alibabacloud.com
 +.cn.download.nvidia.com
 +.cnb.cool
 +.cncqcloud.com
@@ -2998,6 +3004,7 @@
 +.statickksmg.com
 +.statis.api.3g.youku.com
 +.stats.music.xiaomi.com
++.status.alibabacloud.com
 +.statusfeishu.cn
 +.statuslarkoffice.com
 +.stcn.com
