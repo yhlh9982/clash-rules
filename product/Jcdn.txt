@@ -32,4 +32,5 @@
 - +.yt998.cn
 - +.ytong8686.com
 - +.yunjnet.com
+- +.zongcaibanzhanshizixun-haokan.baidu.com
 - api.dzzi.ai
