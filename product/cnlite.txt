@@ -82,6 +82,7 @@
 +.59bob.cn
 +.6655.com
 +.6ts7c.cn
++.71shi.net
 +.72whys.com
 +.7fresh.com
 +.7k2k1.cn
@@ -1438,6 +1439,7 @@
 +.gogokid.com
 +.gogokid.com.cn
 +.gongyi.xin
++.goodq.top
 +.goofish.com
 +.gordonmoore.com
 +.goselling.com
@@ -1489,6 +1491,7 @@
 +.haosou.com
 +.haosou.com.cn
 +.haosou.net
++.haowenti.net
 +.haowu.link
 +.hap.10010.com
 +.hapierxia.com
@@ -3463,6 +3466,7 @@
 +.wegobank.cn
 +.weiphone.net
 +.weishi.com
++.weixin.com
 +.weixinbridge.com
 +.weiyun.com
 +.werepository.com.cn
