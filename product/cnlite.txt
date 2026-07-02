@@ -86,6 +86,7 @@
 +.72whys.com
 +.7fresh.com
 +.7k2k1.cn
++.81.cn
 +.8531.cn
 +.88cha.com
 +.8gcdp.cn
@@ -223,6 +224,7 @@
 +.aigc-cloud.com
 +.aihst8.com
 +.aipage.com
++.aireads.cn
 +.airstarfinance.net
 +.aitransfy.com
 +.ali-api-test.net
@@ -671,6 +673,7 @@
 +.byteq5k.com
 +.byteq8u.net
 +.bytescm.com
++.bytespeech.com
 +.bytesslb.net
 +.bytetcc.com
 +.bytetech.info
@@ -862,6 +865,14 @@
 +.chaindd.com
 +.changdunovel.com
 +.chaspark.com
++.chatdrama.cn
++.chatdrama.net
++.chatqidian.cn
++.chatqidian.net
++.chattext.cn
++.chatwrite.net
++.chatxiaoxiang.com
++.chatyuewen.cn
 +.cheaa.com
 +.checkzeit.com
 +.cheng.xin
@@ -1118,6 +1129,7 @@
 +.dianzhenkeji.com
 +.dig.bdurl.net
 +.dingding.xin
++.dingstore.cn
 +.dingtalk.cn
 +.dingtalk.com
 +.dingtalk.net
@@ -1125,6 +1137,7 @@
 +.dingtalkcloud.com
 +.discuz.net
 +.discuz.org
++.dishu3.com
 +.dlnel.com
 +.dlnel.org
 +.dml-lang.org
@@ -1232,6 +1245,7 @@
 +.easebar.com
 +.easic.com
 +.eastday.com
++.ebrun.com
 +.eclick.baidu.com
 +.ecma.bdimg.com
 +.ecmb.bdimg.com
@@ -1910,6 +1924,7 @@
 +.inteltechnologyprovider.com
 +.intelvmwarecybersecurity.com
 +.intltencentcos.com
++.iot-tencent.com
 +.ipanda.cn
 +.ipanda.com
 +.ipanda.com.cn
@@ -2100,6 +2115,7 @@
 +.kfomn.cn
 +.kgimg.com
 +.kglink.cn
++.kjrb.com.cn
 +.kksmg.com
 +.km6g.cn
 +.km7g.cn
@@ -2504,6 +2520,7 @@
 +.onebank.com.cn
 +.onexmail.com
 +.oortgslb.com
++.open-douyin.com
 +.open-uc.cn
 +.openamt.com
 +.openapp.run
@@ -2944,6 +2961,7 @@
 +.statusfeishu.cn
 +.statuslarkoffice.com
 +.stcn.com
++.stdaily.com
 +.stockstar.com
 +.storageclassmemory.io
 +.storageclassmemory.org
@@ -3468,6 +3486,8 @@
 +.weishi.com
 +.weixin.com
 +.weixinbridge.com
++.weixinsxy.com
++.weiyang.cn
 +.weiyun.com
 +.werepository.com.cn
 +.wetv.qq.com
@@ -3486,6 +3506,7 @@
 +.wm.baidu.com
 +.woaihuoshan.com
 +.wohst8.com
++.workercn.cn
 +.worldofship.cn
 +.worldoftank.cn
 +.worldoftanks.cn
@@ -3510,6 +3531,7 @@
 +.wxcloudrun.com
 +.wxgateway.com
 +.wxlivecdn.com
++.wxmpurl.cn
 +.wxsbank.com
 +.wztsy.cn
 +.wztsy.com
@@ -3592,6 +3614,7 @@
 +.xueqiu.com
 +.xwbank.com
 +.xxsy.net
++.xxsypro.com
 +.y43f6.cn
 +.yangkeduo.com
 +.yangshipin.cn
@@ -3610,6 +3633,7 @@
 +.yiwanzhushou.com
 +.yiyaojd.com
 +.yizhitou.com
++.yjwujian.cn
 +.yk-ssp.ad.youku.com
 +.ykad-data.youku.com
 +.ykimg.com
@@ -3650,6 +3674,7 @@
 +.yxdmgame.com
 +.yximg.cn
 +.yxwsgame.com
++.yysls.cn
 +.yzwb.net
 +.yzyxgame.com
 +.z-bank.com
