@@ -347,6 +347,7 @@
 +.animetamashi.com
 +.anitama.cn
 +.anitama.net
++.anquan
 +.anquanke.com
 +.antfin.com
 +.antfortune.com
@@ -2877,6 +2878,7 @@
 +.shobserver.com
 +.shoppingads.cn
 +.shotwithgeforce.com
++.shouji
 +.shrbank.com
 +.shujupie.com
 +.shuqi.com
@@ -3583,6 +3585,7 @@
 +.xiguashipin.net
 +.xiguavideo.cn
 +.xiguavideo.net
++.xihuan
 +.xilu.com
 +.ximalaya.com
 +.xin.xin
@@ -3661,6 +3664,7 @@
 +.yufuid.com
 +.yufuid.com.cn
 +.yufuid.net
++.yun
 +.yundzh.com
 +.yunjitele.com
 +.yunnan.cn
