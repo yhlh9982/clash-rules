@@ -985,6 +985,7 @@ tracker.nanoha.org
 tracker.nartlof.com.br
 tracker.nekomi.cn
 tracker.netmap.top
+tracker.nexusstream.eu
 tracker.nitrix.me
 tracker.noobsubs.net
 tracker.novalayer.org
