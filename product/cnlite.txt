@@ -17,6 +17,8 @@
 +.166.com
 +.166.net
 +.1688.com
++.17173.com
++.17173cdn.com
 +.17roco.com
 +.188.com
 +.1huizhan.com
@@ -900,6 +902,7 @@
 +.cgbchina.com.cn
 +.chaindd.com
 +.changdunovel.com
++.changyou.com
 +.chaspark.com
 +.chatdrama.cn
 +.chatdrama.net
@@ -1115,6 +1118,7 @@
 +.cueme.cn
 +.cup.com.cn
 +.cup62.cn
++.cy.com
 +.cyol.com
 +.cyol.net
 +.cyzone.cn
@@ -2285,6 +2289,7 @@
 +.livesaasvolccdn.com
 +.local-ip.online
 +.lofter.com
++.log-global.aliyuncs.com
 +.log.tbs.qq.com
 +.log.umtrack.com
 +.log.zijieapi.com
@@ -2714,6 +2719,7 @@
 +.pixeldance.com
 +.piyipiba.com
 +.pl.youku.com
++.playcool.com
 +.plbslog.umeng.com
 +.pmem.org
 +.pmem.us
@@ -3754,6 +3760,8 @@
 +.ydstatic.com
 +.yeah.net
 +.yesky.com
++.yeyou.com
++.yeyoucdn.com
 +.yeyousg.com
 +.yhd.com
 +.yicai.com
@@ -3863,6 +3871,7 @@
 +.zjstv.com
 +.zjytxd.cn
 +.zjytxp.cn
++.zlinkurl.cn
 +.zmifi.com
 +.zml81.cn
 +.zol-img.com.cn
