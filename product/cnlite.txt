@@ -915,6 +915,7 @@
 +.cheaa.com
 +.checkzeit.com
 +.cheng.xin
++.chenshipin.com
 +.chicalot.cn
 +.chinaaet.com
 +.chinabank.com.cn
@@ -933,6 +934,7 @@
 +.chinaunionpay.com.cn
 +.chinaunionpay.net
 +.chips.com
++.chuanbaoguancha.cn
 +.chuanke.com
 +.cib.com.cn
 +.cici.com
@@ -1043,6 +1045,7 @@
 +.cncqcloud.com
 +.cnfol.com
 +.cnfolimg.com
++.cnhubei.com
 +.cnlogs.umeng.com
 +.cnlogs.umengcloud.com
 +.cnms.net.cn
@@ -1427,6 +1430,7 @@
 +.freebuf.com
 +.freshhema.com
 +.freshippo.com
++.fromgeek.com
 +.fsphere.cn
 +.functiongraph.run
 +.fund123.cn
@@ -1651,6 +1655,7 @@
 +.huaweiyun.cn
 +.huaweiyun.com
 +.huaxiong.com
++.hubeidaily.net
 +.huoshan.com
 +.huoshancdn.com
 +.huoshanfake.com
@@ -2122,6 +2127,7 @@
 +.jiemian.com.cn
 +.jike.city
 +.jikecdn.com
++.jimeng.com
 +.jin10.com
 +.jinantimes.com.cn
 +.jingdong.com
@@ -2191,6 +2197,7 @@
 +.kshbank.cn
 +.ktv.com
 +.kuailepipixia.com
++.kuaizhan.com
 +.kugoo.com
 +.kugou.com
 +.kugou.net
@@ -2849,6 +2856,7 @@
 +.qznovelstatic.com
 +.qznovelvod.com
 +.qzone.com
++.qzwb.com
 +.r8zc9.cn
 +.radeon.com
 +.readnovel.com
@@ -2904,10 +2912,12 @@
 +.saxyit.com
 +.sccreator.cn
 +.sccreators.cn
++.scdaily.cn
 +.scescdn.cn
 +.scgchc.com
 +.scid.cn
 +.sclick.baidu.com
++.scol.com.cn
 +.scsentry.cn
 +.scsjb.cn
 +.sctv-tf.com
@@ -2935,6 +2945,7 @@
 +.sgyouxi.com
 +.shangyexinzhi.com
 +.shanhaitujian.com
++.shedunews.net
 +.shejijia.com
 +.shenjing.com
 +.shidianguji.com
@@ -2979,6 +2990,7 @@
 +.sngmta.qq.com
 +.snowballsecurities.com
 +.snssdk.com
++.snxw.com
 +.so.com
 +.sogo.com
 +.sogou-inc.com
@@ -3385,6 +3397,7 @@
 +.unionpayintl.com
 +.unionpaysecure.com
 +.universalscalablefirmware.org
++.updream.cn
 +.upos-hz-mirrorakam.akamaized.net
 +.uranus.sogou.com
 +.urlqh.cn
@@ -3439,6 +3452,9 @@
 +.videoxiaoyouxi.com
 +.vipmro.com
 +.vipmro.net
++.vlabimg.com
++.vlabstatic.com
++.vlabvod.com
 +.vm45e.cn
 +.vmall.com
 +.vmallres.com
@@ -3750,6 +3766,7 @@
 +.xsgtvacct.com
 +.xueqiu.com
 +.xwbank.com
++.xxcb.cn
 +.xxsy.net
 +.xxsypro.com
 +.xyf61.cn
