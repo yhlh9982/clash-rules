@@ -740,6 +740,7 @@ tracker.6.babico.name.tr
 tracker.7471.top
 tracker.aburaya.live
 tracker.acgnx.se
+tracker.adgk.net
 tracker.aibt.xyz
 tracker.alaskantf.com
 tracker.aletorrenty.pl
