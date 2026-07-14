@@ -1796,7 +1796,6 @@
 +.intc.com
 +.inte.sogou.com
 +.inte.sogoucdn.com
-+.intel
 +.intel-research.net
 +.intel-university-collaboration.net
 +.intel.ac
