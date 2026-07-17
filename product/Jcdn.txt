@@ -34,3 +34,5 @@
 - +.yunjnet.com
 - +.zongcaibanzhanshizixun-haokan.baidu.com
 - api.dzzi.ai
+- api.dzzi.org
+- api.eppppp.top
