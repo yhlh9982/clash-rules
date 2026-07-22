@@ -250,6 +250,7 @@ eccologic.net
 echostar.ddnsfree.com
 eddie4.nl
 edge-team.cc
+edgev.duckdns.org
 edu.uifr.ru
 ehtracker.org
 elementsbrowser.com
@@ -1325,6 +1326,7 @@ y.t-1.org
 yahor.ftp.sh
 yahor.of.by
 yann5.hexanyn.fr
+ydlkccp.dscloud.me
 yggtracker.i2p.rocks
 yolo.liberbear.com
 yuki.bt.bontal.net

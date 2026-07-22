@@ -335,6 +335,7 @@
 +.alteraforum.com
 +.alyms.cn
 +.amap.com
++.amap.net
 +.amapauto.com
 +.amd.com
 +.amd.com.cn
@@ -570,6 +571,7 @@
 +.binglianhuajianzhan.com
 +.bisheng.cn
 +.bishengcompiler.cn
++.bjd.com.cn
 +.bjnews.com.cn
 +.bkapigw.com
 +.bkapps.com
@@ -596,6 +598,7 @@
 +.butterfly-static.cn
 +.butterflyai.cn
 +.buyaltera.com
++.buyjingxi.com
 +.bvfcdn.com
 +.bvfcdn2.com
 +.bvfcdn3.com
@@ -927,6 +930,7 @@
 +.chinanews.com.cn
 +.chinaott.com
 +.chinapay.com
++.chinapp.com
 +.chinaqw.com
 +.chinastarmarket.cn
 +.chinaums.com
@@ -1184,6 +1188,7 @@
 +.dingtalk.net
 +.dingtalkapps.com
 +.dingtalkcloud.com
++.dingxinwen.cn
 +.discuz.net
 +.discuz.org
 +.dishu3.com
@@ -1610,10 +1615,12 @@
 +.hsbc.com.cn
 +.hsbcinsurance.com.cn
 +.hsbcqh.com.cn
++.hsw.cn
 +.hsz71.cn
 +.htrace.wetvinfo.com
 +.huanqiu.com
 +.huanqiucdn.cn
++.huashangtop.com
 +.huasheng.cn
 +.huawei.cn
 +.huawei.com
@@ -1987,6 +1994,7 @@
 +.ipanda.com
 +.ipanda.com.cn
 +.ipanda.net
++.iqilu.com
 +.iresearch.cn
 +.isd.com
 +.isdspeed.qq.com
@@ -2101,6 +2109,7 @@
 +.jddapeigou.com
 +.jddebug.com
 +.jddglobal.com
++.jddj.com
 +.jdemall.com
 +.jdfw1.com
 +.jdgslb.com
@@ -2130,6 +2139,7 @@
 +.jin10.com
 +.jinantimes.com.cn
 +.jingdong.com
++.jingdonghealth.cn
 +.jingdongjinrong.com
 +.jingpinhui.com
 +.jingpt.com
@@ -2173,6 +2183,7 @@
 +.kaolacdn.com
 +.kcbebank.com
 +.kesong.co
++.kf.cn
 +.kfcbest.com
 +.kfomn.cn
 +.kgimg.com
@@ -2435,6 +2446,7 @@
 +.muyewx.com
 +.mvad.com
 +.mxhichina.com
++.my-imcloud.com
 +.my-kualalumpur-1.myhuaweicloud.com
 +.my-qcloud.com
 +.myalicdn.com
@@ -2442,6 +2454,7 @@
 +.mybank.cn
 +.mydrivers.com
 +.myelasticsearch.com
++.myhsw.cn
 +.myhuaweicloud-custom.cn
 +.myhuaweicloud-custom.com
 +.myhuaweicloud-koodrive.cn
@@ -3292,6 +3305,7 @@
 +.tmtsmartrun.com
 +.tns.simba.taobao.com
 +.toplife.com
++.topnews.cn
 +.toscdn.com
 +.tourismshow.cn
 +.tourismuser.cn
@@ -3670,6 +3684,7 @@
 +.wting.info
 +.wtturl.cn
 +.wukong.com
++.wukongsafe.cn
 +.wukongwenda.cn
 +.wukongwenda.com
 +.wuliao.epro.sogou.com
