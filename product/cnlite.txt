@@ -244,6 +244,7 @@
 +.alibaba.com
 +.alibabacapital.com
 +.alibabachengdun.com
++.alibabachengdun.net
 +.alibabacloud.co.in
 +.alibabacloud.com
 +.alibabacloud.com.au
@@ -255,6 +256,8 @@
 +.alibabadesign.com
 +.alibabadns.com
 +.alibabadoctor.com
++.alibabafonts.com
++.alibabafoundation.com
 +.alibabafuturehotel.com
 +.alibabagroup.com
 +.alibabapictures.com
@@ -334,6 +337,7 @@
 +.altera.com
 +.alteraforum.com
 +.alyms.cn
++.alysm.cn
 +.amap.com
 +.amap.net
 +.amapauto.com
@@ -753,6 +757,7 @@
 +.cb.baidu.com
 +.cbinews.com
 +.cbjs.baidu.com
++.ccidcom.com
 +.ccs.umeng.com
 +.cctv.cn
 +.cctv.com
@@ -1113,9 +1118,11 @@
 +.crash.163.com
 +.crash2.zhihu.com
 +.crashlytics.163.com
++.cri.cn
 +.crosswalk-project.com
 +.crosswalk-project.net
 +.cs.com.cn
++.csjplatform.com
 +.cstm.baidu.com
 +.csxbank.com
 +.ctdsb.clouddiffuse.xyz
@@ -1125,6 +1132,7 @@
 +.cueme.cn
 +.cup.com.cn
 +.cup62.cn
++.cww.net.cn
 +.cy.com
 +.cyol.com
 +.cyol.net
@@ -1315,6 +1323,7 @@
 +.eduad.baidu.com
 +.eduapaashwc.com
 +.eeo.com.cn
++.egsea.com
 +.eiv.baidu.com
 +.ele.me
 +.ele.to
@@ -1409,6 +1418,7 @@
 +.fengcx.com
 +.fengedu.com
 +.fengimg.com
++.fengniaojipei.net
 +.fenxi.360.cn
 +.fenxi.com
 +.ffbuddy.com
@@ -1545,8 +1555,11 @@
 +.guigu.org
 +.guoguo-app.com
 +.gw.com.cn
++.gxnews.com.cn
++.gxrb.com.cn
 +.gxtv.cn
 +.gxxmt.com
++.gxxw.com
 +.gztv.com
 +.h-adashx.ut.ele.me
 +.h-adashx.ut.taobao.com
@@ -1713,6 +1726,8 @@
 +.hypercachenet.com
 +.hypercachenode.com
 +.hyperscan.io
++.hzchengdun.com
++.hzchengdun.net
 +.i.snssdk.com
 +.i360mall.com
 +.iadmat.nosdn.127.net
@@ -2125,6 +2140,7 @@
 +.jdwl.com
 +.jdx.com
 +.jfdaily.com
++.jfdaily.com.cn
 +.jhgtgb.com
 +.jhscm.com
 +.jianying.com
@@ -2176,6 +2192,7 @@
 +.jzt.jd.com
 +.jztvnews.com
 +.ka9bv.cn
++.kada.com
 +.kanbox.com
 +.kankanews.com
 +.kankannews.com
@@ -2682,6 +2699,7 @@
 +.paidaojia.cn
 +.pailitao.com
 +.paipai.com
++.pangle.cn
 +.pangolin-dsp-toutiao-b.com
 +.pangolin-dsp-toutiao.com
 +.pangolin-hl.snssdk.com
@@ -2859,6 +2877,7 @@
 +.qqmra.cn
 +.qqmra.com
 +.qqmusic.com
++.qstheory.cn
 +.qualitycloud.top
 +.quark.cn
 +.quyaoya.com
@@ -2963,6 +2982,7 @@
 +.shidianguji.com
 +.shifen.com
 +.shihuo.cn
++.shobserver.cn
 +.shobserver.com
 +.shoppingads.cn
 +.shotwithgeforce.com
@@ -3082,6 +3102,7 @@
 +.taobaocdn.com
 +.taobizhong.com
 +.taopiaopiao.com
++.taotian.com
 +.taou.com
 +.tapd.cn
 +.tb.cn
@@ -3295,6 +3316,7 @@
 +.tm7sg.cn
 +.tmall
 +.tmall.com
++.tmall.hk
 +.tmall.ru
 +.tmalltv.com
 +.tmead.y.qq.com
@@ -3761,6 +3783,7 @@
 +.xinminweekly.com.cn
 +.xinyan.cn
 +.xitu.io
++.xixikf.cn
 +.xjietiao.com
 +.xjoycity.com
 +.xkb.com.cn
@@ -3779,6 +3802,7 @@
 +.xscale.com
 +.xsgtvacct.com
 +.xueqiu.com
++.xuexi.cn
 +.xwbank.com
 +.xxcb.cn
 +.xxsy.net
@@ -3795,18 +3819,21 @@
 +.yeyoucdn.com
 +.yeyousg.com
 +.yhd.com
++.yhgfb-cn-static.com
 +.yicai.com
 +.yidianliulan.cn
 +.yidianliulan.com
 +.yihaodian.com
 +.yihaodianimg.com
 +.yillionbank.com
++.yisou.com
 +.yiwanzhushou.com
 +.yiyaojd.com
 +.yizhitou.com
 +.yjwujian.cn
 +.yk-ssp.ad.youku.com
 +.ykad-data.youku.com
++.ykimg.alicdn.com
 +.ykimg.com
 +.ym.run
 +.ymbank.com
