@@ -206,6 +206,7 @@
 +.adv.sec.intl.miui.com
 +.adv.sec.miui.com
 +.adver.qq.com
++.adx.36kr.com
 +.adx.xiaodutv.com
 +.ae-ad-1.myhuaweicloud.com
 +.ae-rus.net
@@ -754,6 +755,8 @@
 +.caixin.com
 +.caiyu.com
 +.cankaoxiaoxi.com
++.capcut.com
++.capcutcdn-us.com
 +.cb.baidu.com
 +.cbinews.com
 +.cbjs.baidu.com
