@@ -603,6 +603,7 @@
 +.butterfly-static.cn
 +.butterflyai.cn
 +.buyaltera.com
++.buydouke.com
 +.buyjingxi.com
 +.bvfcdn.com
 +.bvfcdn2.com
@@ -726,6 +727,7 @@
 +.bytetraffic.net
 +.bytetstatic.com
 +.bytetstatic.net
++.byteurl.cn
 +.bytevalk.com
 +.bytevcloudapi.com
 +.bytevcloudvod.com
@@ -755,6 +757,7 @@
 +.caixin.com
 +.caiyu.com
 +.cankaoxiaoxi.com
++.capcut.cn
 +.capcut.com
 +.capcutcdn-us.com
 +.cb.baidu.com
@@ -1049,7 +1052,11 @@
 +.cm.baidu.com
 +.cmbc.com.cn
 +.cmpassport.com
++.cn-beijing.aliyuncs.com
++.cn-chengdu.aliyuncs.com
++.cn-guangzhou.aliyuncs.com
 +.cn-hangzhou.aliyuncs.com
++.cn-hongkong.aliyuncs.com
 +.cn-shanghai.aliyuncs.com
 +.cn.alibabacloud.com
 +.cn.download.nvidia.com
@@ -1147,6 +1154,7 @@
 +.dahe.cn
 +.daheapp.com
 +.dahebao.cn
++.dailygn.com
 +.damai.cn
 +.dandan818.com
 +.dandanvoice.com
@@ -1317,7 +1325,9 @@
 +.ecmc.bdimg.com
 +.ecns.cn
 +.ecombdapi.com
++.ecombdimg.com
 +.ecombdstatic.com
++.ecombdvod.com
 +.ectencent.cn
 +.ectencent.com.cn
 +.edgeceler.com
@@ -1364,6 +1374,7 @@
 +.expreview.com
 +.extlog.snssdk.com
 +.faceu.com
++.faceu.mobi
 +.falconsending.com
 +.fanfou.com
 +.fanqiecopyright.com
@@ -1625,6 +1636,7 @@
 +.hntv.tv
 +.hongxiu.com
 +.hoopchina.com.cn
++.hotfix-api.aliyuncs.com
 +.hq-tracking.qq.com
 +.hr-welink.com
 +.hs.wosms.cn
@@ -2315,6 +2327,7 @@
 +.liangtv.cn
 +.liangxinyao.com
 +.lianmeng.360.cn
++.lifexue.com
 +.linglonglife.com
 +.lingshoujia.com
 +.lingxigames.com
@@ -2598,12 +2611,14 @@
 +.nvidia.tw
 +.nvidiaforhp.com
 +.nvidiagrid.net
++.nvsgames.cn
 +.nzwgs.com
 +.o7mu8.cn
 +.obriccloud.com
 +.obricclouddw.com
 +.oc.umeng.com
 +.oceancloudapi.com
++.oceanengine.com
 +.ocwms.com
 +.oeeee.com
 +.ofweek.com
@@ -2898,6 +2913,7 @@
 +.reconinstruments.com
 +.reconjet.com
 +.rednet.cn
++.registry.aliyuncs.com
 +.reke.at.sohu.com
 +.renderingtoolkit.org
 +.report.qqweb.qq.com
@@ -3419,6 +3435,7 @@
 +.ulikecam.com
 +.ulogs.umeng.com
 +.ulogs.umengcloud.com
++.ulpay.com
 +.ultimatemusic.cn
 +.ultracachenode.com
 +.um.run
