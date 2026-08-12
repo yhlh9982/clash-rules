@@ -2444,6 +2444,7 @@
 +.miui.com
 +.miwifi.com
 +.mle5p.cn
++.mmbizurl.cn
 +.mmstat.com
 +.mnw.cn
 +.mobads-logs.baidu.com
@@ -3455,6 +3456,7 @@
 +.updream.cn
 +.upos-hz-mirrorakam.akamaized.net
 +.uranus.sogou.com
++.url.cn
 +.urlqh.cn
 +.us-east-1.myhuaweicloud.com
 +.utoken.umeng.com
