@@ -73,6 +73,7 @@
 +.36kr.com
 +.36krcdn.com
 +.36krcnd.com
++.36linkr.com
 +.3conline.com
 +.3elife.net
 +.3ili6.cn
@@ -471,6 +472,7 @@
 +.bankcomm.cn
 +.bankcomm.com
 +.bankofbeijing.com.cn
++.banyuetan.org
 +.baomitu.com
 +.barefootnetworks.com
 +.baseopendev.com
@@ -764,6 +766,7 @@
 +.cbinews.com
 +.cbjs.baidu.com
 +.ccidcom.com
++.ccreports.com.cn
 +.ccs.umeng.com
 +.cctv.cn
 +.cctv.com
@@ -955,6 +958,7 @@
 +.cici.com
 +.ciciai.com
 +.ciciaicdn.com
++.cih-index.com
 +.cilk.com
 +.cilk.net
 +.citibank.com.cn
@@ -2211,6 +2215,7 @@
 +.kanbox.com
 +.kankanews.com
 +.kankannews.com
++.kanshangjie.com
 +.kaola.com
 +.kaolacdn.com
 +.kcbebank.com
@@ -3275,6 +3280,7 @@
 +.texasholdemcup.cn
 +.texasholdemcup.com
 +.texasholdemcup.net
++.tfcaijing.com
 +.tfogc.com
 +.tgovcloud.com
 +.thecover.cn
@@ -3320,6 +3326,8 @@
 +.tiktokw.eu
 +.tiktokw.us
 +.timatrix.com.cn
++.time-weekly.com
++.timesmedia.com.cn
 +.timibase.com
 +.timmerse.com
 +.tingbook.com
