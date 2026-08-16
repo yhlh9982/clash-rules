@@ -417,6 +417,7 @@
 +.apigwtencent.com
 +.apollo.auto
 +.appjiagu.com
++.applogcdn.com
 +.ar.umeng.com
 +.arco.design
 +.ark-doc-resources.cn
@@ -2980,6 +2981,7 @@
 +.sctv.com
 +.sealsuite.com
 +.sealsuite.net
++.searchpstatp.com
 +.searchstatic.com
 +.searchtoutiaolive.com
 +.secrss.com
