@@ -1274,6 +1274,7 @@
 +.douyinec.com
 +.douyinfe.com
 +.douyinliving.com
++.douyinmusicpromotion.com
 +.douyinpay.com
 +.douyinpic.com
 +.douyinstatic.com
@@ -2328,6 +2329,7 @@
 +.le5vb.cn
 +.leikeji.com
 +.leiphone.com
++.letsign.com
 +.lf126.net
 +.lf127.net
 +.liangtv.cn
@@ -3770,6 +3772,7 @@
 +.xiaoaiassist.com
 +.xiaochuankeji.cn
 +.xiaodutv.com
++.xiaohe.cn
 +.xiaoluyouxuan.com
 +.xiaoluzhidian.com
 +.xiaomi.cn
@@ -3807,6 +3810,7 @@
 +.xilu.com
 +.ximalaya.com
 +.xin.xin
++.xingtu.cn
 +.xinhuanet.com
 +.xinhuaxmt.com
 +.xinlingshou.cn
