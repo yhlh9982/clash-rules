@@ -3746,7 +3746,6 @@
 +.wuliao.epro.sogou.com
 +.wuliujie.cn
 +.wuliujie.com
-+.www.amd.com
 +.wxaurl.cn
 +.wxcloudrun.com
 +.wxgateway.com
