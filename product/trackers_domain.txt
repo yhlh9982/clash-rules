@@ -886,6 +886,7 @@ tracker.ghostchu-services.top
 tracker.gigantino.net
 tracker.gigatorrents.ws
 tracker.gmi.gd
+tracker.govt.hu
 tracker.grepler.com
 tracker.guguan.000.pe
 tracker.guguan.dpdns.org
