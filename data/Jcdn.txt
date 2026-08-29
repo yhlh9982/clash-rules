@@ -6,11 +6,14 @@
 - +.bjnet2.com
 
 - +.mojcn.com
+- +.xiaoyan.io
 - +.cnmjin.net
 - +.cnmjcn.cyou
+- +.linuxlh.xin
 
 - +.yh82l3dsytxzf8.com
 
+- +.ubi.com
 - +.shcdn.xyz
 - +.shanhai.cfd
 - +.shanhai.you
@@ -21,6 +24,7 @@
 - +.bestcf.top
 - +.xxxyun.top
 - +.idsduf.com
+- +.niubifast.cc
 - +.whtjdasha.com
 - +.jueduibupao.top
 
@@ -44,3 +48,8 @@
 - +.allmzk.org
 - +.aisafushi.org
 - +.aileoneed.org
+
+- +.ltdns.top
+
+- +.lxyun.xyz
+- +.7770006.xyz
