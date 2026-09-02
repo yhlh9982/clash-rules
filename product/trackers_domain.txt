@@ -1240,6 +1240,7 @@ u4.trakx.crim.ist
 u6.trakx.crim.ist
 uabits.today
 uatracker.net
+udp-tracker.adgk.net
 udp-tracker.shittyurl.org
 udp.trackarr.org
 udp.tracker.linvk.com
