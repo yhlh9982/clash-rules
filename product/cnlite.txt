@@ -1620,6 +1620,8 @@
 +.hexin.cn
 +.hexin.com.cn
 +.hexun.com
++.hf.co
++.hf.space
 +.hi-butterfly.cn
 +.hiascend.cn
 +.hiascend.com
@@ -1698,6 +1700,7 @@
 +.huaweiyun.com
 +.huaxiong.com
 +.hubeidaily.net
++.huggingface.co
 +.huoshan.com
 +.huoshancdn.com
 +.huoshanfake.com
