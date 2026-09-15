@@ -278,6 +278,7 @@ free.publictracker.xyz
 freedom.1776.ga
 freedomalternative.com
 freerainbowtables.com
+freetracker.i2p
 frp.v2fy.com
 frp.v2fy.com00
 ftp.pet
@@ -1337,6 +1338,7 @@ yahor.ftp.sh
 yahor.of.by
 yann5.hexanyn.fr
 ydlkccp.dscloud.me
+yet-another-public-tracker.i2p
 yggtracker.i2p.rocks
 yolo.liberbear.com
 yuki.bt.bontal.net
