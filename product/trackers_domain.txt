@@ -1118,6 +1118,7 @@ tracker.torrentbytes.net
 tracker.torrentclaw.com
 tracker.torrentino.com
 tracker.torrentleech.org
+tracker.torrents.observer
 tracker.torrentsnows.com
 tracker.torrentuje.me
 tracker.torrenty.org
