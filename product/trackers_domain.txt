@@ -465,6 +465,7 @@ opentracker.cc
 opentracker.co
 opentracker.i2p.rocks
 opentracker.io
+opentracker.lain.moscow
 opentracker.xyz
 opentrackr.org
 openwrt.lingyurouqing.xyz

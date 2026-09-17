@@ -1381,6 +1381,7 @@ http://tracker.torrentbay.to:6969/announce
 http://tracker.torrentbytes.net/announce
 http://tracker.torrentino.com/announce
 http://tracker.torrentleech.org:2710/announce
+http://tracker.torrents.observer/announce
 http://tracker.torrentuje.me:2710/announce
 http://tracker.torrenty.org:6969/announce
 http://tracker.torrentyorg.pl/announce
@@ -3027,6 +3028,7 @@ udp://open.xxtor.com:3074/announce
 udp://opentor.org:2710/announce
 udp://opentracker.i2p.rocks:6969/announce
 udp://opentracker.io:6969/announce
+udp://opentracker.lain.moscow:6969/announce
 udp://opentracker.xyz:443/announce
 udp://opentrackr.org:1337/announce
 udp://openwrt.lingyurouqing.xyz:6969/announce
