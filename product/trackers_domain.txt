@@ -1152,6 +1152,7 @@ tracker.webtorrent.dev
 tracker.wellknownclub.net
 tracker.wepzone.net
 tracker.wildkat.net
+tracker.willy.pro
 tracker.wsaoa.eu.org
 tracker.x6c.co
 tracker.xdvdz.com
