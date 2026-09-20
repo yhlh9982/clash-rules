@@ -550,6 +550,7 @@ http://222.84.23.109:6969/announce
 http://222.84.23.141:6969/announce
 http://222.84.23.36:6969/announce
 http://222.84.23.3:6969/announce
+http://223.165.69.105:3392/announce
 http://27.197.187.78:6969/announce
 http://31.38.161.123:6969/announce
 http://34.170.169.34/announce
@@ -999,6 +1000,7 @@ http://jvavav.com/announce
 http://kamikazee.duckdns.org:7777/announce
 http://kinorun.com/announce
 http://kiryuu-test.mywaifu.best:6969/announce
+http://kolanopentracker.airdns.org:3392/announce
 http://laxclax.ddns.net00/announce
 http://laxclax.ddns.net:8000/announce
 http://leidenfro.st:6969/announce
@@ -2426,6 +2428,7 @@ udp://222.216.139.72:6969/announce
 udp://222.84.22.60:6969/announce
 udp://222.84.22.86:6969/announce
 udp://222.84.23.141:6969/announce
+udp://223.165.69.105:3392/announce
 udp://23.134.124.81:8081/announce
 udp://23.134.88.11:6969/announce
 udp://23.134.88.9:1337/announce
@@ -2946,6 +2949,7 @@ udp://keke.re:6969/announce
 udp://kingof.torrentonline.cc:42069/announce
 udp://kiryuu-test.mywaifu.best:6969/announce
 udp://kokodayo.site:6969/announce
+udp://kolanopentracker.airdns.org:3392/announce
 udp://kristof.bartanet.cz:6969/announce
 udp://laestrygonian.ooguy.com:9001/announce
 udp://laszlo130.go.ro:6969/announce
