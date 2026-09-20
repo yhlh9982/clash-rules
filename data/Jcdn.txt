@@ -17,6 +17,8 @@
 - +.linuxlh.xin
 #stc-spare
 - +.yh82l3dsytxzf8.com
+#leiting
+- +.ltdns.top
 #山海
 - +.ubi.com
 - +.shcdn.xyz
@@ -43,5 +45,3 @@
 - +.allmzk.org
 - +.aisafushi.org
 - +.aileoneed.org
-#leiting
-- +.ltdns.top
