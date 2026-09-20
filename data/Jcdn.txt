@@ -39,6 +39,7 @@
 #良心云
 - +.lxyun.xyz
 - +.7770006.xyz
+- +.7770008.xyz
 - +.alilago.org
 - +.bsxis.org
 - +.akacaio.org
