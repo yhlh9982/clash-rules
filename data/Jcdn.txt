@@ -1,25 +1,32 @@
-- +.ekan8.com
-- api.dzzi.ai
+# 中转站 api地址
+#ekan8
+- +.ekanw.com
+#大肘子
+- +.dzzi.ai
 - api.eppppp.top
 - api.dzzi.org
 
+# 机场 cdn地址
+#八戒
 - +.bjnet2.com
-
+#魔戒
 - +.mojcn.com
 - +.xiaoyan.io
 - +.cnmjin.net
 - +.cnmjcn.cyou
 - +.linuxlh.xin
-
+#stc-spare
 - +.yh82l3dsytxzf8.com
-
+#山海
 - +.ubi.com
 - +.shcdn.xyz
 - +.shanhai.cfd
 - +.shanhai.you
+- +.shanhai.sbs
 - +.shanhai.cyou
 - +.shanhai.click
-
+- +.sh-cloudflare.sbs
+#牛逼
 - +.6bnw.top
 - +.bestcf.top
 - +.xxxyun.top
@@ -27,29 +34,14 @@
 - +.niubifast.cc
 - +.whtjdasha.com
 - +.jueduibupao.top
-
-- +.yt998.cn
-- +.shiyutv.cn
-- +.tannel.cc
-- +.liangxin1.xyz
-- +.ytong8686.com
-- +.luoluodemeng.cn
-- +.tai-ku-la-xuanwoba.com
-- +.xi-huan-ni-wanwanni.com
-- +.zongcaibanzhanshizixun-haokan.baidu.com
-
-- +.waimaosass.icu
-- +.yunjnet.com
-- +.poke-mon.xyz
-
+#良心云
+- +.lxyun.xyz
+- +.7770006.xyz
 - +.alilago.org
 - +.bsxis.org
 - +.akacaio.org
 - +.allmzk.org
 - +.aisafushi.org
 - +.aileoneed.org
-
+#leiting
 - +.ltdns.top
-
-- +.lxyun.xyz
-- +.7770006.xyz
