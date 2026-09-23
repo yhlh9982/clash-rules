@@ -1302,6 +1302,7 @@
 +.draftstatic.com
 +.dratio.com
 +.dreamcast.hk
++.drivers.amd.com
 +.drmcmm.baidu.com
 +.druid.vip
 +.dt.dbankcloud.ru
