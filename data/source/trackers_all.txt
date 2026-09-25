@@ -269,6 +269,7 @@ http://177.188.141.137:6969/announce
 http://177.188.141.175:6969/announce
 http://177.188.141.28:6969/announce
 http://177.188.141.32:6969/announce
+http://177.188.141.75:6969/announce
 http://177.215.65.114:6969/announce
 http://177.215.65.176:6969/announce
 http://177.215.65.40:6969/announce
@@ -2119,6 +2120,7 @@ udp://177.173.31.33:6969/announce
 udp://177.188.141.175:6969/announce
 udp://177.188.141.28:6969/announce
 udp://177.188.141.32:6969/announce
+udp://177.188.141.75:6969/announce
 udp://177.215.65.114:6969/announce
 udp://177.215.65.176:6969/announce
 udp://177.215.65.40:6969/announce
@@ -2949,6 +2951,7 @@ udp://keke.re:6969/announce
 udp://kingof.torrentonline.cc:42069/announce
 udp://kiryuu-test.mywaifu.best:6969/announce
 udp://kokodayo.site:6969/announce
+udp://kolankoalastree.newtrackon.co.nz:1337/announce
 udp://kolanopentracker.airdns.org:3392/announce
 udp://kristof.bartanet.cz:6969/announce
 udp://laestrygonian.ooguy.com:9001/announce
