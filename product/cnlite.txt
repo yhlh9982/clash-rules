@@ -1081,6 +1081,7 @@
 +.cn.alibabacloud.com
 +.cn.download.nvidia.com
 +.cnb.cool
++.cnb.space
 +.cncqcloud.com
 +.cneo.com.cn
 +.cnfol.com
