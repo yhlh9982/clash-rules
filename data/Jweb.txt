@@ -2,6 +2,8 @@ bj.bmjsub.org
 
 sub01.sh-cloudflare.sbs
 
+sh.sub01.dingzhi01.cfd
+
 jdddf.stc-spare2.com
 
 api3.nimenshishangdi.cc
