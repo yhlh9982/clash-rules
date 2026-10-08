@@ -1,6 +1,7 @@
 - +.6bnw.top
 - +.7770006.xyz
 - +.7770008.xyz
+- +.777078.xyz
 - +.aileoneed.org
 - +.aisafushi.org
 - +.akacaio.org
@@ -34,3 +35,4 @@
 - +.yh82l3dsytxzf8.com
 - api.dzzi.org
 - api.eppppp.top
+- oauth.litepan.top
