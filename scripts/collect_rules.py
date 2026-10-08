@@ -1,5 +1,4 @@
 import ipaddress
-import json
 import re
 import shutil
 import sys
@@ -17,19 +16,19 @@ CUSTOM_RULES = [
     {
         "name": "Jcdn",
         "source_file": DATA_DIR / "Jcdn.txt",
-        "product_file": PRODUCT_DIR / "Jcdn.yaml",
+        "product_file": PRODUCT_DIR / "Jcdn.txt",
     },
     {
         "name": "Jweb",
         "source_file": DATA_DIR / "Jweb.txt",
-        "product_file": PRODUCT_DIR / "Jweb.yaml",
+        "product_file": PRODUCT_DIR / "Jweb.txt",
     },
 ]
 
 TRACKER_URL = "https://raw.githubusercontent.com/adysec/tracker/main/trackers_all.txt"
 TRACKER_RAW_FILE = SOURCE_DIR / "trackers_all.txt"
-TRACKER_DOMAIN_PRODUCT = PRODUCT_DIR / "trackers_domain.yaml"
-TRACKER_IP_PRODUCT = PRODUCT_DIR / "trackers_ip.yaml"
+TRACKER_DOMAIN_PRODUCT = PRODUCT_DIR / "trackers_domain.txt"
+TRACKER_IP_PRODUCT = PRODUCT_DIR / "trackers_ip.txt"
 
 LOYALSOLDIER_RULES = [
     {
@@ -59,7 +58,7 @@ LOYALSOLDIER_RULES = [
 ]
 
 CNLITE_CATEGORY_FILE = DATA_DIR / "cnlite_geosite.txt"
-CNLITE_PRODUCT_FILE = PRODUCT_DIR / "cnlite.yaml"
+CNLITE_PRODUCT_FILE = PRODUCT_DIR / "cnlite.txt"
 CNLITE_SOURCE_DIR = SOURCE_DIR / "meta_geosite"
 
 META_RULES_GEOSITE_BASE_URL = (
@@ -88,11 +87,13 @@ def download_text(url):
 
 def download_file(url, output_path):
     text = download_text(url)
+
     if text is None:
         return False
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(text, encoding="utf-8", newline="\n")
+
     print(f"已保存到：{output_path}")
     return True
 
@@ -103,28 +104,25 @@ def read_clean_lines(path):
         return []
 
     lines = []
-    with open(path, "r", encoding="utf-8") as file:
+
+    with path.open("r", encoding="utf-8") as file:
         for raw_line in file:
             line = raw_line.strip()
+
             if not line or line.startswith("#"):
                 continue
+
             lines.append(line)
+
     return lines
 
 
-def save_payload_yaml(path, items):
+def save_plain_txt(path, items):
     path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(path, "w", encoding="utf-8", newline="\n") as file:
-        if not items:
-            file.write("payload: []\n")
-        else:
-            file.write("payload:\n")
-            for item in items:
-                # JSON 双引号字符串也是有效的 YAML 字符串；
-                # 保留 +. 等原始内容，同时安全转义特殊字符。
-                value = json.dumps(item, ensure_ascii=False)
-                file.write(f"  - {value}\n")
+    with path.open("w", encoding="utf-8", newline="\n") as file:
+        for item in items:
+            file.write(f"{item}\n")
 
     print(f"已生成：{path}，共 {len(items)} 条")
 
@@ -146,7 +144,7 @@ def process_custom_rules():
             sys.exit(1)
 
         lines = sorted(set(read_clean_lines(source_file)))
-        save_payload_yaml(product_file, lines)
+        save_plain_txt(product_file, lines)
 
 
 def is_ip(value):
@@ -178,8 +176,10 @@ def normalize_domain(domain):
 def ip_to_cidr(ip):
     try:
         ip_obj = ipaddress.ip_address(ip.strip("[]"))
+
         if ip_obj.version == 4:
             return f"{ip_obj.compressed}/32"
+
         return f"{ip_obj.compressed}/128"
     except ValueError:
         return None
@@ -192,6 +192,7 @@ def parse_trackers(lines):
     for raw_line in lines:
         try:
             line = raw_line.strip()
+
             if not line:
                 continue
 
@@ -200,6 +201,7 @@ def parse_trackers(lines):
 
             parsed = urlparse(line)
             host = parsed.hostname
+
             if not host:
                 continue
 
@@ -207,12 +209,15 @@ def parse_trackers(lines):
 
             if is_ip(host):
                 cidr = ip_to_cidr(host)
+
                 if cidr:
                     ip_cidrs.add(cidr)
             else:
                 domain = normalize_domain(host)
+
                 if domain:
                     domains.add(domain)
+
         except Exception:
             continue
 
@@ -224,19 +229,28 @@ def process_trackers():
     print("========== 处理 Tracker 规则 ==========")
 
     text = download_text(TRACKER_URL)
+
     if text is None:
         print("Tracker 下载失败，终止。")
         sys.exit(1)
 
     TRACKER_RAW_FILE.parent.mkdir(parents=True, exist_ok=True)
-    TRACKER_RAW_FILE.write_text(text, encoding="utf-8", newline="\n")
+    TRACKER_RAW_FILE.write_text(
+        text,
+        encoding="utf-8",
+        newline="\n",
+    )
+
     print(f"Tracker 原始文件已保存到：{TRACKER_RAW_FILE}")
 
     raw_lines = []
+
     for raw_line in text.splitlines():
         line = raw_line.strip()
+
         if not line or line.startswith("#"):
             continue
+
         raw_lines.append(line)
 
     domains, ip_cidrs = parse_trackers(raw_lines)
@@ -244,8 +258,8 @@ def process_trackers():
     print(f"解析到 Tracker 域名数量：{len(domains)}")
     print(f"解析到 Tracker IP/CIDR 数量：{len(ip_cidrs)}")
 
-    save_payload_yaml(TRACKER_DOMAIN_PRODUCT, domains)
-    save_payload_yaml(TRACKER_IP_PRODUCT, ip_cidrs)
+    save_plain_txt(TRACKER_DOMAIN_PRODUCT, domains)
+    save_plain_txt(TRACKER_IP_PRODUCT, ip_cidrs)
 
 
 def process_loyalsoldier_rules():
@@ -267,30 +281,37 @@ def process_loyalsoldier_rules():
 
         product_file.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source_file, product_file)
+
         print(f"已输出到：{product_file}")
 
 
 def normalize_geosite_line(line):
     value = line.strip()
+
     if not value:
         return None
 
     if value.startswith("full:"):
         domain = value[5:].strip().lower()
+
         if not domain or "." not in domain or " " in domain:
             return None
+
         return domain
 
     if value.startswith("domain:"):
         domain = value[7:].strip().lower().strip(".")
+
         if not domain or "." not in domain or " " in domain:
             return None
+
         return f"+.{domain}"
 
     if ":" in value:
         return None
 
     value = value.lower().strip()
+
     if not value or "." not in value or " " in value:
         return None
 
@@ -312,6 +333,7 @@ def process_cnlite():
         sys.exit(1)
 
     categories = read_clean_lines(CNLITE_CATEGORY_FILE)
+
     if not categories:
         print("cnlite_geosite.txt 为空，终止。")
         sys.exit(1)
@@ -330,11 +352,12 @@ def process_cnlite():
 
         for line in read_clean_lines(source_file):
             normalized = normalize_geosite_line(line)
+
             if normalized:
                 merged_rules.add(normalized)
 
     sorted_rules = sorted(merged_rules)
-    save_payload_yaml(CNLITE_PRODUCT_FILE, sorted_rules)
+    save_plain_txt(CNLITE_PRODUCT_FILE, sorted_rules)
 
 
 def main():
