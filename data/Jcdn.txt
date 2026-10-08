@@ -34,3 +34,4 @@
 - +.yh82l3dsytxzf8.com
 - api.dzzi.org
 - api.eppppp.top
+- oauth.litepan.top
