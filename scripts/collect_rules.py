@@ -1,4 +1,5 @@
 import ipaddress
+import json
 import re
 import shutil
 import sys
@@ -111,21 +112,19 @@ def read_clean_lines(path):
     return lines
 
 
-def save_plain_txt(path, items):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with open(path, "w", encoding="utf-8", newline="\n") as file:
-        for item in items:
-            file.write(f"{item}\n")
-    print(f"已生成：{path}，共 {len(items)} 条")
-
-
 def save_payload_yaml(path, items):
     path.parent.mkdir(parents=True, exist_ok=True)
 
     with open(path, "w", encoding="utf-8", newline="\n") as file:
-        file.write("payload:\n")
-        for item in items:
-            file.write(f"  - {item}\n")
+        if not items:
+            file.write("payload: []\n")
+        else:
+            file.write("payload:\n")
+            for item in items:
+                # JSON 双引号字符串也是有效的 YAML 字符串；
+                # 保留 +. 等原始内容，同时安全转义特殊字符。
+                value = json.dumps(item, ensure_ascii=False)
+                file.write(f"  - {value}\n")
 
     print(f"已生成：{path}，共 {len(items)} 条")
 
