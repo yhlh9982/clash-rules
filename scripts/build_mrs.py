@@ -9,6 +9,8 @@ PRODUCT_DIR = Path("product")
 RELEASE_DIR = Path("release")
 MIHOMO_BIN = os.environ.get("MIHOMO_BIN", "mihomo")
 
+
+# 保持原文件设定，不增加或删除规则集
 RULESETS = [
     {
         "name": "Jcdn",
@@ -77,25 +79,40 @@ RULESETS = [
 
 
 def check_mihomo():
+    """
+    检查 Mihomo 是否存在。
+    """
     if shutil.which(MIHOMO_BIN):
         return True
 
-    if Path(MIHOMO_BIN).exists():
+    if Path(MIHOMO_BIN).is_file():
         return True
 
-    print("错误：未找到 mihomo。")
-    print("示例：MIHOMO_BIN=/usr/local/bin/mihomo python3 scripts/build_mrs.py")
+    print(f"错误：未找到 mihomo：{MIHOMO_BIN}")
+    print("示例：")
+    print("MIHOMO_BIN=/usr/local/bin/mihomo python3 scripts/build_mrs.py")
     return False
 
 
 def convert_to_mrs(input_file, output_file, behavior, input_format):
+    """
+    使用 Mihomo 将规则集转换为 MRS。
+    """
     if not input_file.exists():
-        print(f"输入文件不存在：{input_file}")
-        sys.exit(1)
+        print(f"错误：输入文件不存在：{input_file}")
+        return False
+
+    if input_file.stat().st_size == 0:
+        print(f"错误：输入文件为空：{input_file}")
+        return False
 
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    cmd = [
+    # 删除旧文件，避免旧 MRS 内容影响结果判断
+    if output_file.exists():
+        output_file.unlink()
+
+    command = [
         MIHOMO_BIN,
         "convert-ruleset",
         behavior,
@@ -104,36 +121,83 @@ def convert_to_mrs(input_file, output_file, behavior, input_format):
         str(output_file),
     ]
 
-    print(f"正在生成：{' '.join(cmd)}")
+    print()
+    print(f"========== 构建规则集：{input_file.stem} ==========")
+    print(f"输入文件：{input_file}")
+    print(f"输入格式：{input_format}")
+    print(f"行为类型：{behavior}")
+    print(f"输出文件：{output_file}")
+    print(f"执行命令：{' '.join(command)}")
 
     try:
-        subprocess.run(cmd, check=True)
-        print(f"已生成：{output_file}")
-    except subprocess.CalledProcessError as error:
+        result = subprocess.run(
+            command,
+            check=False,
+            text=True,
+            capture_output=True,
+        )
+    except OSError as error:
+        print(f"执行 Mihomo 失败：{error}")
+        return False
+
+    if result.stdout:
+        print(result.stdout.rstrip())
+
+    if result.returncode != 0:
         print(f"生成失败：{output_file}")
-        print(f"错误信息：{error}")
-        sys.exit(1)
+        if result.stderr:
+            print(result.stderr.rstrip())
+        return False
+
+    if not output_file.exists():
+        print(f"生成失败：未找到输出文件：{output_file}")
+        return False
+
+    output_size = output_file.stat().st_size
+
+    if output_size == 0:
+        print(f"生成失败：输出文件为空：{output_file}")
+        return False
+
+    print(f"生成成功：{output_file}")
+    print(f"文件大小：{output_size} bytes")
+
+    return True
 
 
 def main():
-    RELEASE_DIR.mkdir(parents=True, exist_ok=True)
-
     if not check_mihomo():
         sys.exit(1)
 
+    RELEASE_DIR.mkdir(parents=True, exist_ok=True)
+
+    failed = []
+
     for ruleset in RULESETS:
-        print("")
-        print(f"========== 构建规则集：{ruleset['name']} ==========")
-        convert_to_mrs(
+        success = convert_to_mrs(
             input_file=ruleset["input_file"],
             output_file=ruleset["output_file"],
             behavior=ruleset["behavior"],
             input_format=ruleset["input_format"],
         )
 
-    print("")
-    print("全部 MRS 文件生成完成。")
-    print(f"输出目录：{RELEASE_DIR}")
+        if not success:
+            failed.append(ruleset["name"])
+
+    print()
+    print("========== 构建结果 ==========")
+
+    if failed:
+        print("以下规则集生成失败：")
+        for name in failed:
+            print(f"  - {name}")
+        sys.exit(1)
+
+    print(f"全部 MRS 文件生成完成，共 {len(RULESETS)} 个：")
+
+    for ruleset in RULESETS:
+        output_file = ruleset["output_file"]
+        print(f"  - {output_file}")
 
 
 if __name__ == "__main__":
