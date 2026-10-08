@@ -108,7 +108,7 @@ def convert_to_mrs(input_file, output_file, behavior, input_format):
 
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    # 删除旧文件，避免旧 MRS 内容影响结果判断
+    # 删除本次输出对应的旧文件，避免将旧 MRS 误认为新结果
     if output_file.exists():
         output_file.unlink()
 
