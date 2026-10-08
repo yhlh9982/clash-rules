@@ -16,19 +16,19 @@ CUSTOM_RULES = [
     {
         "name": "Jcdn",
         "source_file": DATA_DIR / "Jcdn.txt",
-        "product_file": PRODUCT_DIR / "Jcdn.txt",
+        "product_file": PRODUCT_DIR / "Jcdn.yaml",
     },
     {
         "name": "Jweb",
         "source_file": DATA_DIR / "Jweb.txt",
-        "product_file": PRODUCT_DIR / "Jweb.txt",
+        "product_file": PRODUCT_DIR / "Jweb.yaml",
     },
 ]
 
 TRACKER_URL = "https://raw.githubusercontent.com/adysec/tracker/main/trackers_all.txt"
 TRACKER_RAW_FILE = SOURCE_DIR / "trackers_all.txt"
-TRACKER_DOMAIN_PRODUCT = PRODUCT_DIR / "trackers_domain.txt"
-TRACKER_IP_PRODUCT = PRODUCT_DIR / "trackers_ip.txt"
+TRACKER_DOMAIN_PRODUCT = PRODUCT_DIR / "trackers_domain.yaml"
+TRACKER_IP_PRODUCT = PRODUCT_DIR / "trackers_ip.yaml"
 
 LOYALSOLDIER_RULES = [
     {
@@ -58,7 +58,7 @@ LOYALSOLDIER_RULES = [
 ]
 
 CNLITE_CATEGORY_FILE = DATA_DIR / "cnlite_geosite.txt"
-CNLITE_PRODUCT_FILE = PRODUCT_DIR / "cnlite.txt"
+CNLITE_PRODUCT_FILE = PRODUCT_DIR / "cnlite.yaml"
 CNLITE_SOURCE_DIR = SOURCE_DIR / "meta_geosite"
 
 META_RULES_GEOSITE_BASE_URL = (
@@ -119,6 +119,17 @@ def save_plain_txt(path, items):
     print(f"已生成：{path}，共 {len(items)} 条")
 
 
+def save_payload_yaml(path, items):
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    with open(path, "w", encoding="utf-8", newline="\n") as file:
+        file.write("payload:\n")
+        for item in items:
+            file.write(f"  - {item}\n")
+
+    print(f"已生成：{path}，共 {len(items)} 条")
+
+
 def process_custom_rules():
     print("")
     print("========== 处理自定义规则 ==========")
@@ -136,7 +147,7 @@ def process_custom_rules():
             sys.exit(1)
 
         lines = sorted(set(read_clean_lines(source_file)))
-        save_plain_txt(product_file, lines)
+        save_payload_yaml(product_file, lines)
 
 
 def is_ip(value):
@@ -234,8 +245,8 @@ def process_trackers():
     print(f"解析到 Tracker 域名数量：{len(domains)}")
     print(f"解析到 Tracker IP/CIDR 数量：{len(ip_cidrs)}")
 
-    save_plain_txt(TRACKER_DOMAIN_PRODUCT, domains)
-    save_plain_txt(TRACKER_IP_PRODUCT, ip_cidrs)
+    save_payload_yaml(TRACKER_DOMAIN_PRODUCT, domains)
+    save_payload_yaml(TRACKER_IP_PRODUCT, ip_cidrs)
 
 
 def process_loyalsoldier_rules():
@@ -324,7 +335,7 @@ def process_cnlite():
                 merged_rules.add(normalized)
 
     sorted_rules = sorted(merged_rules)
-    save_plain_txt(CNLITE_PRODUCT_FILE, sorted_rules)
+    save_payload_yaml(CNLITE_PRODUCT_FILE, sorted_rules)
 
 
 def main():
