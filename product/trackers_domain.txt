@@ -84,6 +84,7 @@ baibako.tv
 banananetwork.qzz.io
 bananas.space
 bandito.byterunner.io
+banzaitracker.com
 bclearning.top
 bdremux.club
 bedro.cloud
@@ -1016,6 +1017,7 @@ tracker.nyaa2p.i2p
 tracker.nyacat.pw
 tracker.nyap2p.com
 tracker.ocnix.net
+tracker.okade.pro
 tracker.ololosh.space
 tracker.onetracker.net
 tracker.open-data.network
