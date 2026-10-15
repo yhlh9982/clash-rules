@@ -3,94 +3,91 @@ import os
 import shutil
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 
 PRODUCT_DIR = Path("product")
 RELEASE_DIR = Path("release")
-MIHOMO_BIN = os.environ.get("MIHOMO_BIN", "mihomo")
+MIHOMO_BIN = os.environ.get(
+    "MIHOMO_BIN",
+    "mihomo",
+)
 
 
-# 保留原有 9 个规则集。
+# 保持原来的 9 个规则集。
 #
-# source_format 表示 product 中的原始文件格式：
-# - text：product 中为可读 TXT，构建时转换为 release/*.yaml
-# - yaml：product 中已经是 YAML，直接复制到 release/*.yaml
+# source_type:
 #
-# convert_behavior 表示 Mihomo 转换规则类型：
-# - domain
-# - ipcidr
+# plain:
+#   每行一条规则的普通 TXT。
+#   在系统临时目录包装为 payload YAML 后转换。
+#
+# yaml_text:
+#   文件后缀为 TXT，但内容本身是标准 payload YAML。
+#   直接作为 yaml 输入转换。
 RULESETS = [
     {
         "name": "Jcdn",
         "behavior": "domain",
-        "source_format": "text",
+        "source_type": "plain",
         "input_file": PRODUCT_DIR / "Jcdn.txt",
-        "yaml_file": RELEASE_DIR / "Jcdn.yaml",
         "output_file": RELEASE_DIR / "Jcdn.mrs",
     },
     {
         "name": "Jweb",
         "behavior": "domain",
-        "source_format": "text",
+        "source_type": "plain",
         "input_file": PRODUCT_DIR / "Jweb.txt",
-        "yaml_file": RELEASE_DIR / "Jweb.yaml",
         "output_file": RELEASE_DIR / "Jweb.mrs",
     },
     {
         "name": "cnlite",
         "behavior": "domain",
-        "source_format": "text",
+        "source_type": "plain",
         "input_file": PRODUCT_DIR / "cnlite.txt",
-        "yaml_file": RELEASE_DIR / "cnlite.yaml",
         "output_file": RELEASE_DIR / "cnlite.mrs",
     },
     {
         "name": "trackers_domain",
         "behavior": "domain",
-        "source_format": "text",
+        "source_type": "plain",
         "input_file": PRODUCT_DIR / "trackers_domain.txt",
-        "yaml_file": RELEASE_DIR / "trackers_domain.yaml",
         "output_file": RELEASE_DIR / "trackers_domain.mrs",
     },
     {
         "name": "trackers_ip",
         "behavior": "ipcidr",
-        "source_format": "text",
+        "source_type": "plain",
         "input_file": PRODUCT_DIR / "trackers_ip.txt",
-        "yaml_file": RELEASE_DIR / "trackers_ip.yaml",
         "output_file": RELEASE_DIR / "trackers_ip.mrs",
     },
     {
         "name": "proxy",
         "behavior": "domain",
-        "source_format": "yaml",
-        "input_file": PRODUCT_DIR / "proxy.yaml",
-        "yaml_file": RELEASE_DIR / "proxy.yaml",
+        "source_type": "yaml_text",
+        "input_file": PRODUCT_DIR / "proxy.txt",
         "output_file": RELEASE_DIR / "proxy.mrs",
     },
     {
         "name": "direct",
         "behavior": "domain",
-        "source_format": "yaml",
-        "input_file": PRODUCT_DIR / "direct.yaml",
-        "yaml_file": RELEASE_DIR / "direct.yaml",
+        "source_type": "yaml_text",
+        "input_file": PRODUCT_DIR / "direct.txt",
         "output_file": RELEASE_DIR / "direct.mrs",
     },
     {
         "name": "reject",
         "behavior": "domain",
-        "source_format": "yaml",
-        "input_file": PRODUCT_DIR / "reject.yaml",
-        "yaml_file": RELEASE_DIR / "reject.yaml",
+        "source_type": "yaml_text",
+        "input_file": PRODUCT_DIR / "reject.txt",
         "output_file": RELEASE_DIR / "reject.mrs",
     },
     {
         "name": "cncidr",
         "behavior": "ipcidr",
-        "source_format": "yaml",
-        "input_file": PRODUCT_DIR / "cncidr.yaml",
-        "yaml_file": RELEASE_DIR / "cncidr.yaml",
+        "source_type": "yaml_text",
+        "input_file": PRODUCT_DIR / "cncidr.txt",
         "output_file": RELEASE_DIR / "cncidr.mrs",
     },
 ]
@@ -103,133 +100,131 @@ def check_mihomo():
     if shutil.which(MIHOMO_BIN):
         return True
 
-    if Path(MIHOMO_BIN).is_file():
+    mihomo_path = Path(MIHOMO_BIN)
+
+    if (
+        mihomo_path.exists()
+        and mihomo_path.is_file()
+    ):
         return True
 
     print(f"错误：未找到 mihomo：{MIHOMO_BIN}")
     print("示例：")
-    print("MIHOMO_BIN=/usr/local/bin/mihomo python3 scripts/build_mrs.py")
+    print(
+        "MIHOMO_BIN=/usr/local/bin/mihomo "
+        "python3 scripts/build_mrs.py"
+    )
+
     return False
 
 
-def read_clean_lines(input_file):
+def read_plain_rules(input_file):
     """
-    读取 TXT 规则。
-
-    只删除空行和以 # 开头的注释行。
-    不修改规则本身，特别保留：
-    +.example.com
-    api.example.com
-    IP/CIDR
+    读取每行一条规则的普通 TXT。
     """
-    lines = []
+    rules = []
 
-    with input_file.open("r", encoding="utf-8-sig") as file:
+    with input_file.open(
+        "r",
+        encoding="utf-8-sig",
+    ) as file:
         for raw_line in file:
             line = raw_line.strip()
 
-            if not line or line.startswith("#"):
+            if not line:
                 continue
 
-            lines.append(line)
+            if line.startswith("#"):
+                continue
 
-    return lines
+            rules.append(line)
+
+    return rules
 
 
-def write_text_ruleset_yaml(input_file, yaml_file):
+def write_temporary_payload_yaml(
+    input_file,
+    temporary_yaml,
+):
     """
-    将 product/*.txt 转换成可供 Mihomo 使用的 YAML：
+    将普通 TXT 包装成临时 YAML payload。
 
-    payload:
-      - "+.example.com"
-      - "api.example.com"
-
-    使用 JSON 字符串写法，JSON 字符串同时也是合法 YAML 字符串，
-    可以安全保留 +.、特殊字符以及 Unicode 内容。
+    临时文件仅用于 Mihomo 转换，
+    构建结束后自动删除。
     """
-    lines = read_clean_lines(input_file)
+    rules = read_plain_rules(input_file)
 
-    yaml_file.parent.mkdir(parents=True, exist_ok=True)
-
-    with yaml_file.open("w", encoding="utf-8", newline="\n") as file:
-        if not lines:
+    with temporary_yaml.open(
+        "w",
+        encoding="utf-8",
+        newline="\n",
+    ) as file:
+        if not rules:
             file.write("payload: []\n")
         else:
             file.write("payload:\n")
 
-            for line in lines:
-                encoded_line = json.dumps(
-                    line,
+            for rule in rules:
+                encoded_rule = json.dumps(
+                    rule,
                     ensure_ascii=False,
                 )
-                file.write(f"  - {encoded_line}\n")
 
-    return len(lines)
+                file.write(
+                    f"  - {encoded_rule}\n"
+                )
+
+    return len(rules)
 
 
-def prepare_yaml_file(ruleset):
+def validate_yaml_text_file(path):
     """
-    准备 release/*.yaml。
+    检查 TXT 内容是否具有 payload YAML 结构。
 
-    text：
-        product/*.txt -> release/*.yaml
-
-    yaml：
-        product/*.yaml -> release/*.yaml
+    实际语法解析由 Mihomo 完成。
     """
-    input_file = ruleset["input_file"]
-    yaml_file = ruleset["yaml_file"]
-    source_format = ruleset["source_format"]
+    try:
+        content = path.read_text(
+            encoding="utf-8-sig"
+        )
 
-    if not input_file.exists():
-        print(f"错误：输入文件不存在：{input_file}")
-        return False, 0
-
-    if input_file.stat().st_size == 0:
-        print(f"错误：输入文件为空：{input_file}")
-        return False, 0
-
-    yaml_file.parent.mkdir(parents=True, exist_ok=True)
-
-    if yaml_file.exists():
-        yaml_file.unlink()
-
-    if source_format == "text":
-        count = write_text_ruleset_yaml(input_file, yaml_file)
-
-    elif source_format == "yaml":
-        shutil.copyfile(input_file, yaml_file)
-        count = -1
-
-    else:
-        print(f"错误：未知 source_format：{source_format}")
-        return False, 0
-
-    if not yaml_file.exists():
-        print(f"错误：YAML 文件未生成：{yaml_file}")
-        return False, 0
-
-    if yaml_file.stat().st_size == 0:
-        print(f"错误：YAML 文件为空：{yaml_file}")
-        return False, 0
-
-    return True, count
-
-
-def convert_to_mrs(ruleset):
-    """
-    使用 release/*.yaml 作为唯一转换输入，生成 release/*.mrs。
-    """
-    input_file = ruleset["input_file"]
-    yaml_file = ruleset["yaml_file"]
-    output_file = ruleset["output_file"]
-    behavior = ruleset["behavior"]
-
-    prepared, source_count = prepare_yaml_file(ruleset)
-
-    if not prepared:
+    except UnicodeDecodeError as error:
+        print(f"错误：无法读取文件：{path}")
+        print(f"错误信息：{error}")
         return False
 
+    for raw_line in content.splitlines():
+        line = raw_line.strip()
+
+        if not line:
+            continue
+
+        if line.startswith("#"):
+            continue
+
+        if line == "payload:":
+            return True
+
+        if line.startswith("payload:"):
+            return True
+
+    print(
+        f"错误：文件不是标准 payload rule-set："
+        f"{path}"
+    )
+
+    return False
+
+
+def run_mihomo_convert(
+    name,
+    behavior,
+    input_file,
+    output_file,
+):
+    """
+    调用 Mihomo 转换规则集。
+    """
     if output_file.exists():
         output_file.unlink()
 
@@ -238,20 +233,9 @@ def convert_to_mrs(ruleset):
         "convert-ruleset",
         behavior,
         "yaml",
-        str(yaml_file),
+        str(input_file),
         str(output_file),
     ]
-
-    print("")
-    print(f"========== 构建规则集：{ruleset['name']} ==========")
-    print(f"原始输入：{input_file}")
-    print(f"YAML 文件：{yaml_file}")
-    print(f"转换行为：{behavior}")
-    print("转换格式：yaml")
-    print(f"MRS 文件：{output_file}")
-
-    if source_count >= 0:
-        print(f"TXT 有效行数：{source_count}")
 
     print(f"执行命令：{' '.join(command)}")
 
@@ -262,6 +246,7 @@ def convert_to_mrs(ruleset):
             text=True,
             capture_output=True,
         )
+
     except OSError as error:
         print(f"执行 Mihomo 失败：{error}")
         return False
@@ -269,42 +254,154 @@ def convert_to_mrs(ruleset):
     if result.stdout:
         print(result.stdout.rstrip())
 
+    if result.stderr:
+        print(result.stderr.rstrip())
+
     if result.returncode != 0:
-        print(f"生成失败：{output_file}")
-
-        if result.stderr:
-            print(result.stderr.rstrip())
-
+        print(f"生成失败：{name}")
         return False
 
     if not output_file.exists():
-        print(f"生成失败：Mihomo 未生成输出文件：{output_file}")
+        print(
+            f"生成失败：Mihomo 未生成文件："
+            f"{output_file}"
+        )
         return False
 
     if output_file.stat().st_size == 0:
-        print(f"生成失败：MRS 文件为空：{output_file}")
+        print(
+            f"生成失败：MRS 文件为空："
+            f"{output_file}"
+        )
         return False
 
     print(f"生成成功：{output_file}")
-    print(f"YAML 文件大小：{yaml_file.stat().st_size} bytes")
-    print(f"MRS 文件大小：{output_file.stat().st_size} bytes")
+    print(
+        f"MRS 文件大小："
+        f"{output_file.stat().st_size} bytes"
+    )
 
     return True
+
+
+def convert_ruleset(ruleset, temporary_dir):
+    """
+    转换单个规则集。
+    """
+    name = ruleset["name"]
+    behavior = ruleset["behavior"]
+    source_type = ruleset["source_type"]
+    input_file = ruleset["input_file"]
+    output_file = ruleset["output_file"]
+
+    print("")
+    print(f"========== 构建规则集：{name} ==========")
+    print(f"输入文件：{input_file}")
+    print(f"规则行为：{behavior}")
+    print(f"输出文件：{output_file}")
+
+    if not input_file.exists():
+        print(f"错误：输入文件不存在：{input_file}")
+        return False
+
+    if input_file.stat().st_size == 0:
+        print(f"错误：输入文件为空：{input_file}")
+        return False
+
+    output_file.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    if source_type == "plain":
+        temporary_yaml = (
+            temporary_dir
+            / f"{name}.yaml"
+        )
+
+        rule_count = write_temporary_payload_yaml(
+            input_file,
+            temporary_yaml,
+        )
+
+        print(f"TXT 有效规则数量：{rule_count}")
+        print(f"临时转换输入：{temporary_yaml}")
+
+        return run_mihomo_convert(
+            name=name,
+            behavior=behavior,
+            input_file=temporary_yaml,
+            output_file=output_file,
+        )
+
+    if source_type == "yaml_text":
+        if not validate_yaml_text_file(input_file):
+            return False
+
+        print(
+            "输入文件内容为 payload YAML，"
+            "直接使用 yaml 格式转换。"
+        )
+
+        return run_mihomo_convert(
+            name=name,
+            behavior=behavior,
+            input_file=input_file,
+            output_file=output_file,
+        )
+
+    print(f"错误：未知 source_type：{source_type}")
+    return False
+
+
+def remove_old_release_yaml():
+    """
+    删除旧版本可能遗留在 release 目录中的 YAML 文件。
+    """
+    old_yaml_files = [
+        RELEASE_DIR / "Jcdn.yaml",
+        RELEASE_DIR / "Jweb.yaml",
+        RELEASE_DIR / "cnlite.yaml",
+        RELEASE_DIR / "trackers_domain.yaml",
+        RELEASE_DIR / "trackers_ip.yaml",
+        RELEASE_DIR / "proxy.yaml",
+        RELEASE_DIR / "direct.yaml",
+        RELEASE_DIR / "reject.yaml",
+        RELEASE_DIR / "cncidr.yaml",
+    ]
+
+    for path in old_yaml_files:
+        if path.exists():
+            path.unlink()
+            print(f"已删除旧版 Release YAML：{path}")
 
 
 def main():
     if not check_mihomo():
         sys.exit(1)
 
-    RELEASE_DIR.mkdir(parents=True, exist_ok=True)
+    RELEASE_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    remove_old_release_yaml()
 
     failed = []
 
-    for ruleset in RULESETS:
-        success = convert_to_mrs(ruleset)
+    with tempfile.TemporaryDirectory(
+        prefix="mihomo-rules-"
+    ) as temporary_path:
+        temporary_dir = Path(temporary_path)
 
-        if not success:
-            failed.append(ruleset["name"])
+        for ruleset in RULESETS:
+            success = convert_ruleset(
+                ruleset,
+                temporary_dir,
+            )
+
+            if not success:
+                failed.append(ruleset["name"])
 
     print("")
     print("========== 构建结果 ==========")
@@ -317,14 +414,18 @@ def main():
 
         sys.exit(1)
 
-    print(f"全部 YAML/MRS 文件生成完成，共 {len(RULESETS)} 组：")
+    print(
+        f"全部 MRS 文件生成完成，"
+        f"共 {len(RULESETS)} 个："
+    )
 
     for ruleset in RULESETS:
-        yaml_file = ruleset["yaml_file"]
         output_file = ruleset["output_file"]
 
-        print(f"  - {yaml_file}")
-        print(f"  - {output_file}")
+        print(
+            f"  - {output_file} "
+            f"({output_file.stat().st_size} bytes)"
+        )
 
 
 if __name__ == "__main__":
