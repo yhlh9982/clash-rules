@@ -9,12 +9,13 @@
 ## 规则文件地址及使用方式
 
 ### 在线查看内容
+https://github.com/yhlh9982/clash-rules/tree/master/product
  
 trackers_domain.txt - tracker 域名地址
-https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_domain.txt
+https://github.com/yhlh9982/clash-rules/blob/master/product/trackers_domain.txt
 
 trackers_ip.txt - tracker IP地址
-https://raw.githubusercontent.com/yhlh9982/clash-rules/master/trackers_ip.txt
+https://github.com/yhlh9982/clash-rules/blob/master/product/trackers_ip.txt
 
 ### 使用方式
 
