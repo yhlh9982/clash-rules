@@ -37,7 +37,7 @@ jobs:
             | cut -d '"' -f 4)
 
           if [ -z "$DOWNLOAD_URL" ]; then
-            echo "未获取到 Mihomo 下载地址"
+            echo "错误：未获取到 Mihomo 下载地址。"
             exit 1
           fi
 
@@ -55,7 +55,7 @@ jobs:
           set -e
           python scripts/collect_rules.py
 
-      - name: Build MRS and YAML
+      - name: Build MRS
         env:
           MIHOMO_BIN: /usr/local/bin/mihomo
         run: |
@@ -87,58 +87,37 @@ jobs:
             git push
           fi
 
-      - name: Upload YAML and MRS files to GitHub Releases
+      - name: Upload MRS files to GitHub Releases
         uses: softprops/action-gh-release@v2
         with:
           tag_name: tracker-rules
           name: Tracker Rules
           body: |
-            Automatically generated rule sets.
+            Automatically generated Mihomo rule sets.
 
-            TXT files are kept in the repository product directory for viewing.
+            Readable TXT files are kept in the repository product directory.
 
-            YAML files are provided for inspecting and using the original
-            domain/ipcidr payload rules.
-
-            MRS files are provided for Mihomo rule-providers.
+            MRS files are provided here for Mihomo rule-providers.
 
             Files:
-            - Jcdn.yaml
             - Jcdn.mrs
-            - Jweb.yaml
             - Jweb.mrs
-            - cnlite.yaml
             - cnlite.mrs
-            - trackers_domain.yaml
             - trackers_domain.mrs
-            - trackers_ip.yaml
             - trackers_ip.mrs
-            - proxy.yaml
             - proxy.mrs
-            - direct.yaml
             - direct.mrs
-            - reject.yaml
             - reject.mrs
-            - cncidr.yaml
             - cncidr.mrs
           files: |
-            release/Jcdn.yaml
             release/Jcdn.mrs
-            release/Jweb.yaml
             release/Jweb.mrs
-            release/cnlite.yaml
             release/cnlite.mrs
-            release/trackers_domain.yaml
             release/trackers_domain.mrs
-            release/trackers_ip.yaml
             release/trackers_ip.mrs
-            release/proxy.yaml
             release/proxy.mrs
-            release/direct.yaml
             release/direct.mrs
-            release/reject.yaml
             release/reject.mrs
-            release/cncidr.yaml
             release/cncidr.mrs
           make_latest: true
           overwrite_files: true
