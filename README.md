@@ -49,6 +49,5 @@ rules:
 ```
 
 ## 致谢
-
-- [@Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)
-- [@adysec/tracker](https://github.com/adysec/tracker)
+- [Loyalsoldier/clash-rules](https://github.com/Loyalsoldier/clash-rules)
+- [adysec/tracker](https://github.com/adysec/tracker)
