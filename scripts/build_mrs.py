@@ -90,8 +90,14 @@ RULESETS = [
         "input_file": PRODUCT_DIR / "cncidr.txt",
         "output_file": RELEASE_DIR / "cncidr.mrs",
     },
+    {
+        "name": "Seq",
+        "behavior": "domain",
+        "source_type": "plain",
+        "input_file": PRODUCT_DIR / "Seq.txt",
+        "output_file": RELEASE_DIR / "Seq.mrs",
+    },
 ]
-
 
 def check_mihomo():
     """
