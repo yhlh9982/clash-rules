@@ -109,6 +109,7 @@ jobs:
             - direct.mrs
             - reject.mrs
             - cncidr.mrs
+            - Seq.mrs
           files: |
             release/Jcdn.mrs
             release/Jweb.mrs
@@ -119,5 +120,6 @@ jobs:
             release/direct.mrs
             release/reject.mrs
             release/cncidr.mrs
+            release/Seq.mrs
           make_latest: true
           overwrite_files: true
