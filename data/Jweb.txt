@@ -1,3 +1,6 @@
+# sub
++.kdns.fr
+
 # 八戒
 bajie.pw
 
@@ -18,3 +21,7 @@ api6.nimenshishangdi.cc
 # 良心云
 良心云.com
 liangxin.xyz
+
+205.186.64.42/32
+43.129.78.33/32
+74.82.196.10/32
