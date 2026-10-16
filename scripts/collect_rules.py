@@ -26,6 +26,11 @@ CUSTOM_RULES = [
         "source_file": DATA_DIR / "Jweb.txt",
         "product_file": PRODUCT_DIR / "Jweb.txt",
     },
+    {
+        "name": "Seq",
+        "source_file": DATA_DIR / "Seq.txt",
+        "product_file": PRODUCT_DIR / "Seq.txt",
+    },
 ]
 
 
