@@ -1,13 +1,16 @@
-bj.bmjsub.org
+# 八戒
+bajie.pw
 
-sub01.sh-cloudflare.sbs
+# 山海
+shanhai.me
 
-sh.sub01.dingzhi01.cfd
+# 雷霆
+hi.leiting.uk
+w.nn8qozmu.top
 
+# stc-spare
 jdddf.stc-spare2.com
 
-api3.nimenshishangdi.cc
-
-link123.52pokemon66.cc
-
-new.adoptangelaboradvacotionclwonthorughconfrmcompimentdeseertaltar.org
+# 牛逼
+666.66jc.top
+api6.nimenshishangdi.cc
