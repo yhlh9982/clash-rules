@@ -1,8 +1,5 @@
 +.kdns.fr
-205.186.64.42/32
-43.129.78.33/32
 666.66jc.top
-74.82.196.10/32
 api6.nimenshishangdi.cc
 bajie.pw
 hi.leiting.uk
