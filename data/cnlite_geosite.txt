@@ -3,6 +3,7 @@ nvidia
 intel
 xiaomi
 huawei
+sourceforge
 netease
 bilibili
 bilibili2
