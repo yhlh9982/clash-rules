@@ -1491,6 +1491,7 @@
 +.freshhema.com
 +.freshippo.com
 +.fromgeek.com
++.fsdn.com
 +.fsphere.cn
 +.functiongraph.run
 +.fund123.cn
@@ -3046,6 +3047,7 @@
 +.sentry.music.163.com
 +.serverlesscloud.cn
 +.servicewechat.com
++.sf.net
 +.sf3-ttcdn-tos.pstatp.com
 +.sfccn.com
 +.sg.cn
@@ -3126,6 +3128,8 @@
 +.sou.cn
 +.sou.com
 +.soulapp.cn
++.sourceforge.com
++.sourceforge.net
 +.southcn.com
 +.southmoney.com
 +.sparenode.com
