@@ -1076,6 +1076,7 @@ tracker.sakurato.art
 tracker.samcze.pl
 tracker.sbsub.com
 tracker.segso.net
+tracker.sela.st
 tracker.servequake.com
 tracker.sharebro.in
 tracker.sheesh.rip

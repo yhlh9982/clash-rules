@@ -594,6 +594,7 @@
 +.bktencent.com
 +.blackdragon.com
 +.blmpb.com
++.bocd.com.cn
 +.bosc.cn
 +.boxdouyin.com
 +.bpgslbcn.com
@@ -916,6 +917,8 @@
 +.cdnv1.cn
 +.cdnv2.cn
 +.cdnv3.cn
++.cdrcb.com
++.cdrcbank.com
 +.ce.cn
 +.cebbank.com
 +.celeron.com
@@ -1788,6 +1791,7 @@
 +.iadmusicmat.music.126.net
 +.iadmusicmatvideo.music.126.net
 +.ialicdn.com
++.ibangbank.com
 +.ibdxiguaimg.com
 +.ibdxigualive.com
 +.ibdxiguastatic.com
