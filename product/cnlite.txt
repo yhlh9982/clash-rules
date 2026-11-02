@@ -317,6 +317,7 @@
 +.alitianji.com
 +.alitrip.com
 +.aliunicorn.com
++.alivecdn.com
 +.aliway.com
 +.aliwork.com
 +.aliwx.com.cn
@@ -1286,6 +1287,7 @@
 +.doubanio.com
 +.doubao-dev.com
 +.doubao.com
++.doubaoapps.com
 +.doubaocdn.com
 +.doubo03.com
 +.doudou.com
@@ -1362,6 +1364,7 @@
 +.ecombdvod.com
 +.ectencent.cn
 +.ectencent.com.cn
++.edge-byted.com
 +.edgeceler.com
 +.edgeone.cool
 +.edgeonedy1.com
@@ -1616,6 +1619,7 @@
 +.h-adashx4yt.ut.taobao.com
 +.h2tcbox.baidu.com
 +.hackharassment.com
++.haimian.com
 +.hammi.cn
 +.hao123.com
 +.hao123img.com
@@ -1669,6 +1673,7 @@
 +.hkgcloudcs.com
 +.hm.baidu.com
 +.hmma.baidu.com
++.hmxs.cn
 +.hndt.com
 +.hnol.net
 +.hnr.cn
@@ -2448,6 +2453,7 @@
 +.marscode.com
 +.marscode.com.cn
 +.mashort.cn
++.mayibao.cn
 +.mayshijia.com
 +.mcbaas.work
 +.mcdemo.show
@@ -3343,6 +3349,7 @@
 +.tendis.net
 +.tengmed.com
 +.tenpay.com
++.tenpayglobal.com
 +.testjrzk.net.cn
 +.testmeet.cn
 +.testwaf.com
@@ -3783,6 +3790,8 @@
 +.weiyang.cn
 +.weiyun.com
 +.werepository.com.cn
++.wesure.cn
++.wesure100.com
 +.wetv.qq.com
 +.wetv.vip
 +.wetvinfo.com
