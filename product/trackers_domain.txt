@@ -239,6 +239,7 @@ dex.email
 dht.bt251.com
 dht.dhtclub.com
 discord.heihachi.pw
+discover.curiousfacts.blog
 dmitrynegoda.com
 dn42.smrsh.net
 dns.xxtor.com

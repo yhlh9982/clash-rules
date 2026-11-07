@@ -99,6 +99,7 @@
 +.8n82b.cn
 +.91.com
 +.95095.com
++.95508.com
 +.95516.com
 +.95516.net
 +.97ting.com
@@ -597,6 +598,7 @@
 +.blmpb.com
 +.bocd.com.cn
 +.bosc.cn
++.bowangcaijing.cn
 +.boxdouyin.com
 +.bpgslbcn.com
 +.bpigagtm.com
@@ -778,6 +780,7 @@
 +.ccn.com.cn
 +.ccreports.com.cn
 +.ccs.umeng.com
++.cctime.com
 +.cctv.cn
 +.cctv.com
 +.cctv4g.com
@@ -1090,11 +1093,13 @@
 +.cneo.com.cn
 +.cnfol.com
 +.cnfolimg.com
++.cnfood.cn
 +.cnhubei.com
 +.cnlogs.umeng.com
 +.cnlogs.umengcloud.com
 +.cnmo.com
 +.cnms.net.cn
++.cnpharm.com
 +.cnr.cn
 +.cns.com.cn
 +.cnsimg.net
@@ -1205,6 +1210,7 @@
 +.dbankedge.cn
 +.dbankedge.net
 +.dbbuilding.fun
++.dbw.cn
 +.dcarapi.com
 +.dcarimg.com
 +.dcarlive.com
@@ -1547,6 +1553,7 @@
 +.geforce.co.uk
 +.geforce.com
 +.geforce.com.tw
++.gelonghui.com
 +.ger.file.myqcloud.com
 +.getfeishu.cn
 +.getfeishu.com
@@ -1646,6 +1653,8 @@
 +.hdslb.org
 +.hdyxgame.com
 +.healthjd.com
++.hebnews.cn
++.hebrb.cn
 +.heimadata.com
 +.hemamax.com
 +.hemaos.com
@@ -1808,6 +1817,7 @@
 +.ibytepluses.com.cn
 +.ica-alliance.org
 +.iccvlog.com
++.iceo.com.cn
 +.icntvcdn.com
 +.iconfont.cn
 +.icourse163.org
@@ -1868,7 +1878,6 @@
 +.imp.go.sohu.com
 +.imqq.com
 +.imweb.io
-+.in.th
 +.inanguapi.cn
 +.inanguapi.com
 +.inewsweek.cn
@@ -2136,6 +2145,7 @@
 +.jcloudvideo.com
 +.jcloudvideo.net
 +.jclps.com
++.jcrb.com
 +.jd-app.com
 +.jd-ex.cn
 +.jd-ex.com
@@ -2382,6 +2392,7 @@
 +.leikeji.com
 +.leiphone.com
 +.letsign.com
++.levelinfinite.com
 +.lf126.net
 +.lf127.net
 +.liangtv.cn
@@ -2458,6 +2469,7 @@
 +.mcbaas.work
 +.mcdemo.show
 +.mchost.guru
++.mcndata.cn
 +.mcprev.cn
 +.mcs.snssdk.com
 +.mdeer.com
@@ -2608,6 +2620,7 @@
 +.new-aaid.umeng.com.gds.alibabadns.com
 +.neweekly.com.cn
 +.news.cn
++.newscdn.cn
 +.newsimg.cn
 +.newssc.org
 +.newstjk.com
@@ -2620,6 +2633,7 @@
 +.nfpeople.com
 +.nic.xin
 +.nicaifu.com
++.nikke-en.com
 +.niosii.com
 +.niosii.net
 +.njcb.com.cn
@@ -2860,6 +2874,7 @@
 +.procg.cn
 +.projectcircuitbreaker.com
 +.proximabeta.com
++.przwt.com
 +.psbc.com
 +.pstatp.com
 +.puata.info
@@ -3038,6 +3053,7 @@
 +.sciencenet.cn
 +.sclick.baidu.com
 +.scol.com.cn
++.scpublic.cn
 +.scsentry.cn
 +.scsjb.cn
 +.sctv-tf.com
@@ -3086,6 +3102,7 @@
 +.shuqiread.com
 +.shuqireader.com
 +.shuqistat.com
++.shuwen.com
 +.shyhhema.com
 +.sigopt.com
 +.silicon-mobility.com
@@ -3334,6 +3351,7 @@
 +.tencentdms.com
 +.tencenteiam.com
 +.tencentelasticsearch.com
++.tencentgames.com
 +.tencentid.com
 +.tencentidentity.com
 +.tencentmiying.com
@@ -3375,6 +3393,7 @@
 +.tiapi.net
 +.tidaas.com
 +.tidenews.com.cn
++.tidesight.com
 +.tieba.baidu.com
 +.tieba.com
 +.tiebaimg.com
@@ -3487,6 +3506,7 @@
 +.trae.cn
 +.trae.com.cn
 +.trae.guru
++.traveldaily.cn
 +.trustedanalytics.com
 +.trustedanalytics.net
 +.tsparkling.com
@@ -3547,6 +3567,7 @@
 +.universalscalablefirmware.org
 +.updream.cn
 +.upos-hz-mirrorakam.akamaized.net
++.upsort.com
 +.uranus.sogou.com
 +.url.cn
 +.urlqh.cn
@@ -3895,6 +3916,7 @@
 +.xingtu.cn
 +.xinhuanet.com
 +.xinhuaxmt.com
++.xinhuazhiyun.com
 +.xinlingshou.cn
 +.xinmeng.info
 +.xinmin.cn
@@ -3932,6 +3954,7 @@
 +.yangtse.com
 +.ybscjp.com
 +.ycwb.com
++.ydshengxue.com
 +.ydstatic.com
 +.yeah.net
 +.yesky.com
@@ -4018,6 +4041,7 @@
 +.zhichanli.com
 +.zhidemai.com
 +.zhiding.cn
++.zhiguf.com
 +.zhihu-web-analytics.zhihu.com
 +.zhihu.com
 +.zhimg.com
