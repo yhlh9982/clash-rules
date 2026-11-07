@@ -549,13 +549,10 @@
 +.bianews.com
 +.bigfun.cn
 +.bigfunapp.cn
-+.bili2.cc
 +.bili22.cn
 +.bili2233.cn
 +.bili23.cn
 +.bili33.cn
-+.bili888.com
-+.bili999.com
 +.biliapi.com
 +.biliapi.net
 +.bilibili.cc
