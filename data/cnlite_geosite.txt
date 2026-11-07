@@ -6,7 +6,6 @@ huawei
 sourceforge
 netease
 bilibili
-bilibili2
 qihoo360
 baidu
 smzdm
