@@ -4,8 +4,6 @@ intel
 xiaomi
 huawei
 sourceforge
-zhihu
-xiaohongshu
 netease
 bilibili
 qihoo360
