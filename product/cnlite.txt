@@ -22,6 +22,8 @@
 +.17roco.com
 +.188.com
 +.1huizhan.com
++.1y.com
++.1ycdn.com
 +.21jingji.com
 +.25pp.com
 +.26r9y.cn
@@ -2758,6 +2760,7 @@
 +.oss-cn-shenzhen.aliyuncs.com
 +.oss-cn-wulanchabu.aliyuncs.com
 +.oss-cn-zhangjiakou.aliyuncs.com
++.oss-enet.aliyuncs.com
 +.oss-eu-central-1.aliyuncs.com
 +.oss-eu-west-1.aliyuncs.com
 +.oss-me-east-1.aliyuncs.com
@@ -3040,7 +3043,6 @@
 +.saee.org.cn
 +.saffrontech.com
 +.samasty.com
-+.saxyit.com
 +.sccreator.cn
 +.sccreators.cn
 +.scdaily.cn
@@ -3319,6 +3321,7 @@
 +.tencent.design
 +.tencent.net
 +.tencent.net.cn
++.tencentads.com
 +.tencentapps.com
 +.tencentbyod.com
 +.tencentcdb.cn
